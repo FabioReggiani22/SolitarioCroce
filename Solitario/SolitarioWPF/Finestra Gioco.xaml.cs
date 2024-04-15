@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SolitarioCroce;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -21,33 +23,29 @@ namespace Solitario_A_Croce_WPF
     /// </summary>
     public partial class Finestra_Gioco : Window
     {
-        List<Button> _posizioniPresenti;
+        Gioco _giocoSolitario;
+        
+
+
+
         public Finestra_Gioco()
         {
             InitializeComponent();
-            _posizioniPresenti = new List<Button>();
+            //List<int> lista = new List<int>();
+            //int[] lis =  { 1,2,34,5};
+            //lista = lis.ToList();
+
+            //mescolo il mazzo e inizializzo il gioco.
+            Mazzo mazzo = new Mazzo();
+            mazzo.MescolaMazzo();    
+            _giocoSolitario = new Gioco(mazzo);
             
-            RiempiPosizioni();
             
-            
+
+
+
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-           
-        }
-
-        private void RiempiPosizioni()
-        {
-            ComboBox_SceltePosizioni.Items.Add("Mazzetto1");
-            ComboBox_SceltePosizioni.Items.Add("Mazzetto2");
-            ComboBox_SceltePosizioni.Items.Add("Mazzetto3");
-            ComboBox_SceltePosizioni.Items.Add("Mazzetto4");
-            ComboBox_SceltePosizioni.Items.Add("Mazzetto5");
-            ComboBox_SceltePosizioni.Items.Add("Base1");
-            ComboBox_SceltePosizioni.Items.Add("Base2");
-            ComboBox_SceltePosizioni.Items.Add("Base3");
-            ComboBox_SceltePosizioni.Items.Add("Base4");
-        }
+       
     }
 }

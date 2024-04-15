@@ -20,8 +20,5 @@
         <Button x:Name="btnBase2" Content="Base2" HorizontalAlignment="Left" Margin="630,184,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
         <Button x:Name="btnBase3" Content="Base3" HorizontalAlignment="Left" Margin="630,317,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
         <Button x:Name="btnBase4" Content="Base4" HorizontalAlignment="Left" Margin="630,454,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
-        <ComboBox x:Name="ComboBox_SceltePosizioni" HorizontalAlignment="Left" Margin="418,518,0,0" VerticalAlignment="Top" Width="166" Height="24" SelectionChanged="ComboBox_SelectionChanged"/>
-        <Label Content="Seleziona dove vuoi mettere la carta" HorizontalAlignment="Left" Margin="400,492,0,0" VerticalAlignment="Top"/>
-        <Button Content="Invia posizione scelta" HorizontalAlignment="Left" Margin="439,547,0,0" VerticalAlignment="Top" Height="38" Width="124"/>
     </Grid>
 </Window>
