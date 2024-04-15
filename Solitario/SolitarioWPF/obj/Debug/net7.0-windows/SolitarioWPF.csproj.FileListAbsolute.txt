@@ -1,0 +1,28 @@
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.exe
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.deps.json
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.runtimeconfig.json
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.pdb
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\Solitario.dll
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\Solitario.pdb
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.csproj.AssemblyReference.cache
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Finestra Gioco.g.cs
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF_Content.g.cs
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF_MarkupCompile.cache
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF_MarkupCompile.lref
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Finestra Gioco.baml
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.g.resources
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.AssemblyInfoInputs.cache
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.AssemblyInfo.cs
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.csproj.CoreCompileInputs.cache
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.csproj.CopyComplete
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\refint\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.pdb
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.genruntimeconfig.cache
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\ref\SolitarioWPF.dll

@@ -6,11 +6,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Finestra Gioco.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Update="Finestra Gioco.xaml">
       <SubType>Designer</SubType>

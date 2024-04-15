@@ -1,24 +1,21 @@
-﻿<Window x:Class="SolitarioWPF.MainWindow"
+﻿<Window x:Class="Solitario_A_Croce_WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SolitarioWPF"
+        xmlns:local="clr-namespace:Solitario_A_Croce_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Solitario a Croce" Height="450" Width="800">
     <Grid>
-
-        <Button x:Name="btnMazzetto2" Content="Mazzetto2" HorizontalAlignment="Left" Margin="114,159,0,0" VerticalAlignment="Top" Height="114" Width="97"/>
-        <Button x:Name="btnMazzetto3" Content="Mazzetto3" HorizontalAlignment="Left" Margin="216,159,0,0" VerticalAlignment="Top" Height="114" Width="95"/>
-        <Button x:Name="btnMazzetto4" Content="Mazzetto4" HorizontalAlignment="Left" Margin="316,159,0,0" VerticalAlignment="Top" Height="114" Width="97"/>
-        <Button x:Name="btnMazzetto5" Content="Mazzetto5" HorizontalAlignment="Left" Margin="216,279,0,0" VerticalAlignment="Top" Height="115" Width="95"/>
-        <Button x:Name="btnMazzetto1" Content="Mazzetto1" HorizontalAlignment="Left" Margin="216,40,0,0" VerticalAlignment="Top" Height="114" Width="95"/>
-        <Rectangle HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97" Fill="#FFDDDDDD"/>
-        <Button Content="Mazzo" HorizontalAlignment="Left" Margin="114,462,0,0" VerticalAlignment="Top" Height="111" Width="95"/>
-        <Button Content="Pozzo" HorizontalAlignment="Left" Margin="292,467,0,0" VerticalAlignment="Top" Height="115" Width="94"/>
-        <Button x:Name="btnBase1" Content="Base1" HorizontalAlignment="Left" Margin="630,47,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
-        <Button x:Name="btnBase2" Content="Base2" HorizontalAlignment="Left" Margin="630,184,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
-        <Button x:Name="btnBase3" Content="Base3" HorizontalAlignment="Left" Margin="630,317,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
-        <Button x:Name="btnBase4" Content="Base4" HorizontalAlignment="Left" Margin="630,454,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
+        <Label Margin="0,25,0,321" HorizontalAlignment="Center" FontSize="40" Width="740" >Benvenuto al gioco del solitario a croce</Label>
+        <Button Margin="206,113,222,228" FontSize="40" Click="Button_Click_1">Inizia a giocare</Button>
+        <Label Margin="0,256,311,110" FontSize="20">Non sai come si gioca?</Label>
+        <Label Margin="30,292,536,62" FontSize="20" Content="Premi il pulsante di aiuto"/>
+        <Button Margin="13,327,739,59" Foreground="Blue" FontSize="40" Content="" BorderBrush="{x:Null}" Click="Button_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="/-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label Content=" per vedere le regole" HorizontalAlignment="Left" Margin="61,329,0,0" VerticalAlignment="Top" Height="68" Width="228" FontSize="20"/>
     </Grid>
 </Window>
