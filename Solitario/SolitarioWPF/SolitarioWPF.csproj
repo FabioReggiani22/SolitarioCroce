@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Solitario\Solitario.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
