@@ -26,3 +26,7 @@ C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\Solita
 C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.pdb
 C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.genruntimeconfig.cache
 C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\ref\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Esito Partita.g.cs
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Esito Partita.baml
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Istruzioni Gioco.g.cs
+C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Istruzioni Gioco.baml

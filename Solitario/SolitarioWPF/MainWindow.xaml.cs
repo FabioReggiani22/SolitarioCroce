@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SolitarioWPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,19 +25,22 @@ namespace Solitario_A_Croce_WPF
         public MainWindow()
         {
             InitializeComponent();
+           
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Istruzioni_Gioco istruzioni_Gioco = new Istruzioni_Gioco();
+            istruzioni_Gioco.Show();
             
-            
-            MessageBox.Show("", "Come giocare al solitario a croce.",MessageBoxButton.OK,MessageBoxImage.Information);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Finestra_Gioco finestra_Gioco= new Finestra_Gioco();
             finestra_Gioco.Show();
+            this.Close();
         }
     }
 }

@@ -6,9 +6,22 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Compile Update="Esito Partita.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Istruzioni Gioco.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Esito Partita.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Finestra Gioco.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Istruzioni Gioco.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\alan.soldati\Desktop\Git SolitarioCroce\SolitarioCroce\Solitario\SolitarioWPF\App.xaml
-2-2052053368
+4-920012436
 1-2012930998
-6-752997810
+81573540665
 1991139960643
-Finestra Gioco.xaml;MainWindow.xaml;
+Esito Partita.xaml;Finestra Gioco.xaml;Istruzioni Gioco.xaml;MainWindow.xaml;
 
-False
+True
 
