@@ -16,7 +16,7 @@ namespace SolitarioCroce
             _carte = new Carta[40];
             InizializzaMazzo();
             _indexExtraction = 0;
-
+            
         }
 
         private void InizializzaMazzo()

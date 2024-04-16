@@ -64,14 +64,19 @@ namespace SolitarioCroce
         }
         public void SpostaCarte(Carta carta, string idMazzetto)
         {
-            Mazzetto? mazzetto=null;
-            try
+            if (StatoDellaPartita == StatoPartita.PARTITA_IN_CORSO)
             {
-                TrovaMazzetto(idMazzetto, out mazzetto);
-                if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
-                mazzetto.AggiungiCarta(carta);
-                CercaERimuoviCarta(carta);
-            }catch (Exception ex) { throw ex; }
+                Mazzetto? mazzetto = null;
+                try
+                {
+                    TrovaMazzetto(idMazzetto, out mazzetto);
+                    if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
+                    mazzetto.AggiungiCarta(carta);
+                    CercaERimuoviCarta(carta);
+                }
+                catch (Exception ex) { throw ex; }
+            }
+            else throw new ArgumentException("La partita si è già conclusa, non puoi più continuare a giocare");
 
         }
         private void CercaERimuoviCarta(Carta carta)
@@ -79,13 +84,13 @@ namespace SolitarioCroce
             bool trovato = false;
             for (int i = 0; i < _basi.Length; i++)
             {
-                if (_basi[i].VisualizzaPrimaCarta == carta) { _basi[i].TogliCarta();trovato = true;  break; }
+                if (_basi[i].VisualizzaPrimaCarta == carta) { _basi[i].TogliPrimaCarta();trovato = true;  break; }
             }
             if (!trovato)
             {
                 for (int i = 0; i < _croci.Length; i++)
                 {
-                    if (_croci[i].VisualizzaPrimaCarta == carta) { _croci[i].TogliCarta();trovato = true; break; }
+                    if (_croci[i].VisualizzaPrimaCarta == carta) { _croci[i].TogliPrimaCarta();trovato = true; break; }
                 }
                 if(!trovato)
                 {
@@ -117,7 +122,7 @@ namespace SolitarioCroce
         {
             get
             {
-
+                
             }
         }
 

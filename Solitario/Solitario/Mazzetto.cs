@@ -22,6 +22,7 @@ namespace SolitarioCroce
             if (String.IsNullOrEmpty(id)) throw new ArgumentNullException("L'id non può essere vuoto");
             _carte = new Carta[10];
             _indice = 0;
+            Tipo=tipoMazzetto;
             _id = id;
         }
 
@@ -69,7 +70,7 @@ namespace SolitarioCroce
 
 
         }
-        public void TogliCarta()
+        public void TogliPrimaCarta()
         {
             if (_indice == 0) throw new ArgumentException ("Non ci sono carte nel mazzetto");
             _carte[_indice - 1] = null;

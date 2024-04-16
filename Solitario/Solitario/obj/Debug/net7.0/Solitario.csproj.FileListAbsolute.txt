@@ -1,0 +1,12 @@
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.csproj.AssemblyReference.cache
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfoInputs.cache
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfo.cs
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.csproj.CoreCompileInputs.cache
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.deps.json
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.dll
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.pdb
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.dll
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\refint\Solitario.dll
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.pdb
+C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\ref\Solitario.dll
