@@ -5,6 +5,12 @@ using System.Text;
 
 namespace SolitarioCroce
 {
+    public enum StatoPartita
+    {
+        VITTORIA,
+        SCONFITTA,
+        PARTITA_IN_CORSO
+    }
 
     public class Gioco
     {
@@ -19,10 +25,22 @@ namespace SolitarioCroce
             if (mazzo == null) throw new ArgumentNullException("il mazzo non può essere nulla");
             _mazzo = mazzo;
             _pozzo = new List<Carta>();
+            InizializzaBasiECroci();
 
         }
         private void InizializzaBasiECroci()
         {
+            _basi = new Mazzetto[4];
+            for(int i=0; i<_basi.Length; i++)
+            {
+                _basi[i] = new Mazzetto(TipoMazzetto.BASE,$"B{i+1}");
+            }
+            _croci = new Mazzetto[5];
+            for (int i = 0; i < _croci.Length; i++)
+            {
+                _croci[i] = new Mazzetto(TipoMazzetto.CROCE, $"C{i + 1}");
+                _croci[i].AggiungiCarta(_mazzo.EstraiPrimaCarta);
+            }
 
         }
         public Mazzetto[] Basi
@@ -44,30 +62,66 @@ namespace SolitarioCroce
         {
             get => _pozzo;
         }
-        public void SpostaCarte(Carta carta)
+        public void SpostaCarte(Carta carta, string idMazzetto)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public bool Vittoria()
-        {
-            bool vittoria = true;
-            for(int j=0;j<_basi.GetLength(0);j++)
+            Mazzetto? mazzetto=null;
+            try
             {
-                for (int i = 0; i < _basi.GetLength(1); i++)
+                TrovaMazzetto(idMazzetto, out mazzetto);
+                if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
+                mazzetto.AggiungiCarta(carta);
+                CercaERimuoviCarta(carta);
+            }catch (Exception ex) { throw ex; }
+
+        }
+        private void CercaERimuoviCarta(Carta carta)
+        {
+            bool trovato = false;
+            for (int i = 0; i < _basi.Length; i++)
+            {
+                if (_basi[i].VisualizzaPrimaCarta == carta) { _basi[i].TogliCarta();trovato = true;  break; }
+            }
+            if (!trovato)
+            {
+                for (int i = 0; i < _croci.Length; i++)
                 {
-                    if (_basi[j, i] == null)
+                    if (_croci[i].VisualizzaPrimaCarta == carta) { _croci[i].TogliCarta();trovato = true; break; }
+                }
+                if(!trovato)
+                {
+                    for(int i=0; i< _pozzo.Count; i++)
                     {
-                        vittoria = false;
-                        break;
+                        if (_pozzo[i] == carta) { _pozzo.Remove(carta);trovato = true; break; }
                     }
                 }
             }
-            return vittoria;
-            
+        }
+        private bool TrovaMazzetto(string id, out Mazzetto? mazzetto)
+        {
+            bool trovato = false;
+            mazzetto = null;
+            for (int i = 0; i < _basi.Length; i++)
+            {
+                if (_basi[i].Id==id) { trovato = true; mazzetto = _basi[i]; break; }
+            }
+            if(!trovato)
+            {
+                for (int i = 0; i < _croci.Length; i++)
+                {
+                    if (_croci[i].Id == id) { trovato = true; mazzetto = _croci[i]; break; }
+                }
+            }
+            return trovato;
+        }
+        public StatoPartita StatoDellaPartita
+        {
+            get
+            {
+
+            }
         }
 
-        private void PescaCarta()
+        public void PescaCarta()
         {
             _pozzo.Add(_mazzo.EstraiPrimaCarta);
         }
