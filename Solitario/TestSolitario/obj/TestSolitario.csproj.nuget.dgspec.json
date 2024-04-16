@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\TestSolitario\\TestSolitario.csproj": {}
+    "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\Solitario\\Solitario.csproj": {
+    "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\Solitario\\Solitario.csproj",
+        "projectUniqueName": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj",
         "projectName": "Solitario",
-        "projectPath": "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\Solitario\\Solitario.csproj",
-        "packagesPath": "C:\\Users\\alan.soldati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\Solitario\\obj\\",
+        "projectPath": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj",
+        "packagesPath": "C:\\Users\\fabio.reggiani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alan.soldati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fabio.reggiani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,24 +60,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.312\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\TestSolitario\\TestSolitario.csproj": {
+    "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\TestSolitario\\TestSolitario.csproj",
+        "projectUniqueName": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj",
         "projectName": "TestSolitario",
-        "projectPath": "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\TestSolitario\\TestSolitario.csproj",
-        "packagesPath": "C:\\Users\\alan.soldati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\TestSolitario\\obj\\",
+        "projectPath": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj",
+        "packagesPath": "C:\\Users\\fabio.reggiani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alan.soldati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fabio.reggiani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\Solitario\\Solitario.csproj": {
-                "projectPath": "C:\\Users\\alan.soldati\\source\\repos\\Solitario\\Solitario\\Solitario.csproj"
+              "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj": {
+                "projectPath": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj"
               }
             }
           }
@@ -142,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.312\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     }
