@@ -80,13 +80,16 @@ namespace SolitarioCroce
         {
             bool errore = false;
             if (_indice == 0 && carta.ValoreCarta != Valore.Asso) errore = true;
-            if (_indice != 0 && (int)carta.ValoreCarta - 1 != (int)_carte[_indice].ValoreCarta) errore = true;
+            else
+            {
+                if (_indice != 0 && ((int)carta.ValoreCarta - 1 != (int)_carte[_indice-1].ValoreCarta || carta.SemeCarta != _carte[_indice-1].SemeCarta)) errore = true;
+            }
             if (errore) { throw new ArgumentException("La carta non può essere messa nelle basi"); }
         }
 
         private void VerificaOrdineCroci(Carta carta)
         {
-            if(_indice!=0 && ((int)carta.ValoreCarta + 1 != (int)_carte[_indice].ValoreCarta || carta.SemeCarta == _carte[_indice].SemeCarta)) throw new ArgumentException("La carta inserita non è valida");
+            if(_indice!=0 && ((int)carta.ValoreCarta + 1 != (int)_carte[_indice-1].ValoreCarta || carta.SemeCarta == _carte[_indice-1].SemeCarta)) throw new ArgumentException("La carta inserita non è valida");
         }
         public override bool Equals(object? obj)
         {

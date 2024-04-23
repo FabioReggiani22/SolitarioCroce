@@ -122,7 +122,15 @@ namespace SolitarioCroce
         {
             get
             {
-                
+                bool vittoria = ControlloVincita();
+            }
+        }
+        private bool ControlloVincita()
+        {
+            bool vittoria=true;
+            foreach(Mazzetto mazzetto in _basi)
+            {
+                if (mazzetto.Carte[10]==new Carta(10,Seme.Denara) || mazzetto.Carte[10] == new Carta(10, Seme.Denara)
             }
         }
 
