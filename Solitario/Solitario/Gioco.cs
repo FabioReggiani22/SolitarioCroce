@@ -18,6 +18,7 @@ namespace SolitarioCroce
         private List<Carta> _pozzo;
         private Mazzetto[] _basi;
         private Mazzetto[] _croci;
+        private StatoPartita _statoPartita;
 
 
         public Gioco( Mazzo mazzo)
@@ -26,6 +27,7 @@ namespace SolitarioCroce
             _mazzo = mazzo;
             _pozzo = new List<Carta>();
             InizializzaBasiECroci();
+            _statoPartita = StatoPartita.PARTITA_IN_CORSO;
 
         }
         private void InizializzaBasiECroci()
@@ -71,8 +73,9 @@ namespace SolitarioCroce
                 {
                     TrovaMazzetto(idMazzetto, out mazzetto);
                     if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
-                    mazzetto.AggiungiCarta(carta);
                     CercaERimuoviCarta(carta);
+                    mazzetto.AggiungiCarta(carta);
+                    ControlloVincita();
                 }
                 catch (Exception ex) { throw ex; }
             }
@@ -120,18 +123,26 @@ namespace SolitarioCroce
         }
         public StatoPartita StatoDellaPartita
         {
-            get
-            {
-                bool vittoria = ControlloVincita();
-            }
+            get => _statoPartita;
         }
-        private bool ControlloVincita()
+        private void ControlloVincita()
         {
             bool vittoria=true;
             foreach(Mazzetto mazzetto in _basi)
             {
-                if (mazzetto.Carte[10]==new Carta(10,Seme.Denara) || mazzetto.Carte[10] == new Carta(10, Seme.Denara)
+                if (mazzetto.Carte[10] !=new Carta(10,Seme.Denara) || mazzetto.Carte[10] != new Carta(10, Seme.Bastoni) || mazzetto.Carte[10] != new Carta(10, Seme.Coppe) || mazzetto.Carte[10] != new Carta(10, Seme.Spade))
+                {
+                    vittoria=false; break;
+                }
             }
+            if(vittoria)
+            {
+                _statoPartita = StatoPartita.VITTORIA;
+            }
+        }
+        public void Resa()
+        {
+            _statoPartita = StatoPartita.SCONFITTA;
         }
 
         public void PescaCarta()

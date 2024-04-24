@@ -26,7 +26,7 @@ namespace SolitarioCroce
             _id = id;
         }
 
-        public Carta[] Carte
+        public Carta[]? Carte
         {
             get => _carte;
         }

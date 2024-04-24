@@ -60,5 +60,12 @@ namespace SolitarioCroce
             string res = $"{ValoreCarta} di {SemeCarta}";
             return res;
         }
+        public override bool Equals(object? obj)
+        {
+            if(obj == null) return false;
+            Carta carta = obj as Carta;
+            if(carta.SemeCarta==SemeCarta && carta.ValoreCarta==ValoreCarta) return true;
+            return false;
+        }
     }
 }
