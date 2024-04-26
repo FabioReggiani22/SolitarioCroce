@@ -68,10 +68,10 @@ namespace SolitarioCroce
         {
             if (StatoDellaPartita == StatoPartita.PARTITA_IN_CORSO)
             {
-                Mazzetto? mazzetto = null;
+                Mazzetto? mazzetto;
                 try
                 {
-                    TrovaMazzetto(idMazzetto, out mazzetto);
+                    mazzetto=TrovaMazzetto(idMazzetto);
                     if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
                     CercaERimuoviCarta(carta);
                     mazzetto.AggiungiCarta(carta);
@@ -104,10 +104,11 @@ namespace SolitarioCroce
                 }
             }
         }
-        private bool TrovaMazzetto(string id, out Mazzetto? mazzetto)
+        private Mazzetto TrovaMazzetto(string id)
         {
             bool trovato = false;
-            mazzetto = null;
+            
+            Mazzetto? mazzetto = null;
             for (int i = 0; i < _basi.Length; i++)
             {
                 if (_basi[i].Id==id) { trovato = true; mazzetto = _basi[i]; break; }
@@ -119,7 +120,7 @@ namespace SolitarioCroce
                     if (_croci[i].Id == id) { trovato = true; mazzetto = _croci[i]; break; }
                 }
             }
-            return trovato;
+            return mazzetto;
         }
         public StatoPartita StatoDellaPartita
         {
