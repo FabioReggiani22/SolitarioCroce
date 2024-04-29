@@ -18,7 +18,6 @@ namespace SolitarioCroce
         private List<Carta> _pozzo;
         private Mazzetto[] _basi;
         private Mazzetto[] _croci;
-        private StatoPartita _statoPartita;
 
 
         public Gioco( Mazzo mazzo)
@@ -27,7 +26,6 @@ namespace SolitarioCroce
             _mazzo = mazzo;
             _pozzo = new List<Carta>();
             InizializzaBasiECroci();
-            _statoPartita = StatoPartita.PARTITA_IN_CORSO;
 
         }
         private void InizializzaBasiECroci()
@@ -68,14 +66,13 @@ namespace SolitarioCroce
         {
             if (StatoDellaPartita == StatoPartita.PARTITA_IN_CORSO)
             {
-                Mazzetto? mazzetto;
+                Mazzetto? mazzetto = null;
                 try
                 {
-                    mazzetto=TrovaMazzetto(idMazzetto);
+                    TrovaMazzetto(idMazzetto, out mazzetto);
                     if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
-                    CercaERimuoviCarta(carta);
                     mazzetto.AggiungiCarta(carta);
-                    ControlloVincita();
+                    CercaERimuoviCarta(carta);
                 }
                 catch (Exception ex) { throw ex; }
             }
@@ -104,11 +101,10 @@ namespace SolitarioCroce
                 }
             }
         }
-        private Mazzetto TrovaMazzetto(string id)
+        private bool TrovaMazzetto(string id, out Mazzetto? mazzetto)
         {
             bool trovato = false;
-            
-            Mazzetto? mazzetto = null;
+            mazzetto = null;
             for (int i = 0; i < _basi.Length; i++)
             {
                 if (_basi[i].Id==id) { trovato = true; mazzetto = _basi[i]; break; }
@@ -120,30 +116,26 @@ namespace SolitarioCroce
                     if (_croci[i].Id == id) { trovato = true; mazzetto = _croci[i]; break; }
                 }
             }
-            return mazzetto;
+            return trovato;
         }
         public StatoPartita StatoDellaPartita
         {
-            get => _statoPartita;
+            get
+            {
+                bool vittoria = ControlloVincita();
+            }
         }
-        private void ControlloVincita()
+        private bool ControlloVincita()
         {
             bool vittoria=true;
             foreach(Mazzetto mazzetto in _basi)
             {
                 if (mazzetto.Carte[10] !=new Carta(10,Seme.Denara) || mazzetto.Carte[10] != new Carta(10, Seme.Bastoni) || mazzetto.Carte[10] != new Carta(10, Seme.Coppe) || mazzetto.Carte[10] != new Carta(10, Seme.Spade))
                 {
-                    vittoria=false; break;
+
                 }
             }
-            if(vittoria)
-            {
-                _statoPartita = StatoPartita.VITTORIA;
-            }
-        }
-        public void Resa()
-        {
-            _statoPartita = StatoPartita.SCONFITTA;
+            return vittoria;
         }
 
         public void PescaCarta()

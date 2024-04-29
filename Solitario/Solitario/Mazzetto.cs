@@ -26,7 +26,7 @@ namespace SolitarioCroce
             _id = id;
         }
 
-        public Carta[]? Carte
+        public Carta[] Carte
         {
             get => _carte;
         }
@@ -47,10 +47,11 @@ namespace SolitarioCroce
         {
             get => _id;
         }
-        public Carta VisualizzaPrimaCarta
+        public Carta? VisualizzaPrimaCarta
         {
             get
             {
+                if (_indice == 0) { return null; }
                 return _carte[_indice-1];
             }
         }

@@ -30,11 +30,23 @@ namespace SolitarioCroce
     {
         private Valore _valoreCarta;
         private Seme _semeCarta;
+        private Uri _uri;
 
         public Carta(int valoreCarta, Seme semeCarta)
         {
             ValoreCarta = (Valore)valoreCarta;
             SemeCarta = semeCarta;
+            InizializzaUri();
+        }
+        private void InizializzaUri()
+        {
+            int valore = (int)ValoreCarta;
+            char seme;
+            if ((int)SemeCarta == 1) seme = 'A';
+            else if ((int)SemeCarta == 2) seme = 'B';
+            else if ((int)SemeCarta == 3) seme = 'C';
+            else seme = 'D';
+            _uri = new Uri($"{valore}{seme}.jpg");
         }
 
         public Valore ValoreCarta
@@ -54,18 +66,19 @@ namespace SolitarioCroce
                 _semeCarta = value;
             }
         }
+        public Uri Uri
+        {
+            get
+            {
+
+                return _uri;
+            }
+        }
 
         public override string ToString()
         {
             string res = $"{ValoreCarta} di {SemeCarta}";
             return res;
-        }
-        public override bool Equals(object? obj)
-        {
-            if(obj == null) return false;
-            Carta carta = obj as Carta;
-            if(carta.SemeCarta==SemeCarta && carta.ValoreCarta==ValoreCarta) return true;
-            return false;
         }
     }
 }

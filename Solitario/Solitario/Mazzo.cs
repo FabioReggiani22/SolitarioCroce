@@ -22,11 +22,17 @@ namespace SolitarioCroce
         private void InizializzaMazzo()
         {
             int i = 0;
+            char semeChar;
             for (int seme = 1; seme <= 4; seme++)
             {
+                if(seme == 1) { semeChar = 'A'; }
+                if(seme==2) { semeChar = 'B'; }
+                if(seme==3) {  semeChar = 'C'; }
+                else { semeChar = 'D'; }
+                semeChar = 'A';
                 for (int valore = 1; valore <= 10; valore++)
                 {
-                    _carte[i] = new Carta(valore, (Seme)seme);
+                    _carte[i] = new Carta(valore, (Seme)seme,new Uri($"{valore}{semeChar}.jpg"));
                     i++;
                 }
             }
@@ -65,5 +71,34 @@ namespace SolitarioCroce
             }
         }
 
+        public Carta EstraiCarta
+        {
+            get
+            {
+                Random random = new Random();
+                Carta carta = _carte[random.Next(0, 40)];
+                return carta;
+            }
+        }
+        public void Shift()
+        {
+            Carta carta = _carte[_indexExtraction];
+            for (int i = _indexExtraction; i <= _carte.Length - 2; i++)
+            {
+                _carte[i] = _carte[i + 1];
+            }
+            _carte[_carte.Length - 1] = carta;
+        }
+
+        public override string ToString()
+        {
+            string res = "";
+            for (int i = _indexExtraction; i < _carte.Length; i++)
+            {
+                res += _carte[i].ToString();
+                res += "\n";
+            }
+            return res;
+        }
     }
 }
