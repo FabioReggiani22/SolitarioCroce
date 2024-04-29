@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,6 +13,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -53,15 +55,24 @@ namespace Solitario_A_Croce_WPF
             try
             {
                 _giocoSolitario.PescaCarta();
-                
                 _bottoneConCuiFareSwitch.Name = "btnPozzo";
+
+
                 Carta carta;
                 carta = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
                 string valCarta = carta.ValoreCarta.ToString();
                 string semCarta = carta.SemeCarta.ToString();
 
-                Img_btnPozzo.Source = null;
-                Img_btnPozzo.Source = new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
+
+                //animazione
+                Storyboard animazione = (Storyboard)FindResource("Storyboard_DAMazzo_APozzo");
+                animazione.Begin();
+                Img_DaMazzo_APozzo.Source= new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
+                // 
+                Storyboard_Completed();
+
+
+
             }
             catch
             {
@@ -72,7 +83,22 @@ namespace Solitario_A_Croce_WPF
             }
         }
 
+        private void Storyboard_Completed()
+        {
+            _giocoSolitario.PescaCarta();
+            _bottoneConCuiFareSwitch.Name = "btnPozzo";
 
+
+            Carta carta;
+            carta = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
+            string valCarta = carta.ValoreCarta.ToString();
+            string semCarta = carta.SemeCarta.ToString();
+
+            Thread.Sleep(2000);
+            Img_btnPozzo.Source = null;
+            Img_btnPozzo.Source = new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
+        }
+    
        
 
         private void InizializzaCarteNellaPartita()
@@ -116,45 +142,11 @@ namespace Solitario_A_Croce_WPF
             Img_btnMazzetto5.Source = new BitmapImage(new Uri($"carte/{valCartaMazz5}_{semCartaMazz5}.jpg", UriKind.Relative));
         }
 
-
-
-
-        private void btnMazzetti_Click(object sender, RoutedEventArgs e)
-        {
-            //caso in cui metto la carta dal pozzo a uno dei mazzetti.
-            if (_applicaSwitch)
-            {
-                Button button = (Button)sender;
-                _bottoneConCuiFareSwitch = button;
-
-                string nomeBottone = _bottoneConCuiFareSwitch.Name;
-                string[] nomeCarta = nomeBottone.Split("btn");
-
-
-
-            }
-            else
-            {
-                //caso in cui metto la carta dal mazzetto a unaltro mazzetto.
-
-
-
-
-
-
-            }
-
-
-        }
-
-
-
-
         private void btnPozzo_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                _cartaSelezionataDalPozzo = _giocoSolitario.Pozzo.Last();
+                _cartaSelezionataDalPozzo = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count-1];
                 _applicaSwitch = true;
             }
             catch
@@ -165,7 +157,7 @@ namespace Solitario_A_Croce_WPF
 
         
         private bool _primoBottoneSelezionato = false;
-        private Button _primoBottone; 
+        private Button _primoBottone;
 
         private void btnMazzetto_Click(object sender, RoutedEventArgs e)
         {
@@ -183,7 +175,7 @@ namespace Solitario_A_Croce_WPF
                     if (idMazzettoDestinazione != null && idMazzettoDestinazione != TrovaIdMazzettoDaNomeBottone(_primoBottone.Name))
                     {
                         _giocoSolitario.SpostaCarte(_cartaSelezionataDalPozzo, idMazzettoDestinazione);
-                        
+
 
 
                         //aggiornare la SOURCE DELLA CARTAAAA QUII DENTRO 
@@ -206,6 +198,39 @@ namespace Solitario_A_Croce_WPF
             {
                 _primoBottone = bottoneCliccato;
                 _primoBottoneSelezionato = true;
+
+                string nome = _primoBottone.Name;
+                string id = TrovaIdMazzettoDaNomeBottone(nome);
+                Mazzetto[] croci = _giocoSolitario.Croci;
+                bool trovato = false;
+                foreach (Mazzetto mazzetto in croci)
+                {
+                    if (mazzetto.Id == id)
+                    {
+                        _cartaSelezionataDalPozzo = mazzetto.VisualizzaPrimaCarta;
+                        trovato = true;
+                        break;
+                    }
+                }
+                if (!trovato)
+                {
+                    Mazzetto[] basi = _giocoSolitario.Basi;
+                    foreach (Mazzetto mazzetto in basi)
+                    {
+                        if (mazzetto.Id == id)
+                        {
+                            _cartaSelezionataDalPozzo = mazzetto.VisualizzaPrimaCarta;
+                            trovato = true;
+                            break;
+                        }
+                    }
+                    if (!trovato)
+                    {
+                        _cartaSelezionataDalPozzo = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
+                    }
+                }
+
+
             }
         }
 
@@ -266,6 +291,11 @@ namespace Solitario_A_Croce_WPF
 
             }
 
+        }
+
+        private void btnFinePartita_Click(object sender, RoutedEventArgs e)
+        {
+            _giocoSolitario.Resa();
         }
     }
 }
