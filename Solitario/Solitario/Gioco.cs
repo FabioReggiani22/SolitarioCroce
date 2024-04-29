@@ -18,6 +18,7 @@ namespace SolitarioCroce
         private List<Carta> _pozzo;
         private Mazzetto[] _basi;
         private Mazzetto[] _croci;
+        private StatoPartita _statoPartita;
 
 
         public Gioco( Mazzo mazzo)
@@ -25,6 +26,7 @@ namespace SolitarioCroce
             if (mazzo == null) throw new ArgumentNullException("il mazzo non può essere nulla");
             _mazzo = mazzo;
             _pozzo = new List<Carta>();
+            _statoPartita=StatoPartita.PARTITA_IN_CORSO;
             InizializzaBasiECroci();
 
         }
@@ -122,20 +124,24 @@ namespace SolitarioCroce
         {
             get
             {
-                bool vittoria = ControlloVincita();
+                return _statoPartita;
             }
         }
-        private bool ControlloVincita()
+        private void ControlloVincita()
         {
             bool vittoria=true;
             foreach(Mazzetto mazzetto in _basi)
             {
                 if (mazzetto.Carte[10] !=new Carta(10,Seme.Denara) || mazzetto.Carte[10] != new Carta(10, Seme.Bastoni) || mazzetto.Carte[10] != new Carta(10, Seme.Coppe) || mazzetto.Carte[10] != new Carta(10, Seme.Spade))
                 {
-
+                    vittoria=false; break;
                 }
             }
-            return vittoria;
+            if(vittoria)_statoPartita=StatoPartita.VITTORIA;
+        }
+        public void Resa()
+        {
+            _statoPartita = StatoPartita.SCONFITTA;
         }
 
         public void PescaCarta()

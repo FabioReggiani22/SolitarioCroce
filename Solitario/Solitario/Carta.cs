@@ -70,7 +70,6 @@ namespace SolitarioCroce
         {
             get
             {
-
                 return _uri;
             }
         }

@@ -32,7 +32,7 @@ namespace SolitarioCroce
                 semeChar = 'A';
                 for (int valore = 1; valore <= 10; valore++)
                 {
-                    _carte[i] = new Carta(valore, (Seme)seme,new Uri($"{valore}{semeChar}.jpg"));
+                    _carte[i] = new Carta(valore, (Seme)seme);
                     i++;
                 }
             }
