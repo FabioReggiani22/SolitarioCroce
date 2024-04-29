@@ -8,17 +8,50 @@
         Title="Finestra_Gioco" Height="700" Width="800">
     <Grid>
 
-        <Button x:Name="btnMazzetto2" Content="Mazzetto2" HorizontalAlignment="Left" Margin="114,159,0,0" VerticalAlignment="Top" Height="114" Width="97"/>
-        <Button x:Name="btnMazzetto3" Content="Mazzetto3" HorizontalAlignment="Left" Margin="216,159,0,0" VerticalAlignment="Top" Height="114" Width="95"/>
-        <Button x:Name="btnMazzetto4" Content="Mazzetto4" HorizontalAlignment="Left" Margin="316,159,0,0" VerticalAlignment="Top" Height="114" Width="97"/>
-        <Button x:Name="btnMazzetto5" Content="Mazzetto5" HorizontalAlignment="Left" Margin="216,279,0,0" VerticalAlignment="Top" Height="115" Width="95"/>
-        <Button x:Name="btnMazzetto1" Content="Mazzetto1" HorizontalAlignment="Left" Margin="216,40,0,0" VerticalAlignment="Top" Height="114" Width="95"/>
+
+        <Button x:Name="btnMazzetto2" HorizontalAlignment="Left" Margin="114,159,0,0" VerticalAlignment="Top" Height="114" Width="97" Click="btnMazzetto_Click" >
+            <Image x:Name="Img_btnMazzetto2" Height="109" Width="90" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnMazzetto3" HorizontalAlignment="Left" Margin="216,159,0,0" VerticalAlignment="Top" Height="114" Width="95" Click="btnMazzetto_Click">
+            <Image x:Name="Img_btnMazzetto3" Height="109" Width="90" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnMazzetto4" HorizontalAlignment="Left" Margin="316,159,0,0" VerticalAlignment="Top" Height="114" Width="97" Click="btnMazzetto_Click">
+            <Image x:Name="Img_btnMazzetto4" Height="109" Width="90" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnMazzetto5" HorizontalAlignment="Left" Margin="216,279,0,0" VerticalAlignment="Top" Height="115" Width="95" Click="btnMazzetto_Click">
+            <Image x:Name="Img_btnMazzetto5" Height="109" Width="90" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnMazzetto1" HorizontalAlignment="Left" Margin="216,40,0,0" VerticalAlignment="Top" Height="114" Width="95" Click="btnMazzetto_Click" Background="#FFDDDDDD">
+            <Image x:Name="Img_btnMazzetto1" Height="109" Width="90" Stretch="Fill"/>
+        </Button>
         <Rectangle HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97" Fill="#FFDDDDDD"/>
-        <Button Content="Mazzo" HorizontalAlignment="Left" Margin="114,462,0,0" VerticalAlignment="Top" Height="111" Width="95"/>
-        <Button Content="Pozzo" HorizontalAlignment="Left" Margin="292,467,0,0" VerticalAlignment="Top" Height="115" Width="94"/>
-        <Button x:Name="btnBase1" Content="Base1" HorizontalAlignment="Left" Margin="630,47,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
-        <Button x:Name="btnBase2" Content="Base2" HorizontalAlignment="Left" Margin="630,184,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
-        <Button x:Name="btnBase3" Content="Base3" HorizontalAlignment="Left" Margin="630,317,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
-        <Button x:Name="btnBase4" Content="Base4" HorizontalAlignment="Left" Margin="630,454,0,0" VerticalAlignment="Top" Height="126" Width="100"/>
+
+
+
+        <Button x:Name="btnBase1" HorizontalAlignment="Left" Margin="630,47,0,0" VerticalAlignment="Top" Height="126" Width="100" >
+            <Image x:Name="Img_btnBase1" Height="121" Width="96" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnBase2" HorizontalAlignment="Left" Margin="630,184,0,0" VerticalAlignment="Top" Height="126" Width="100">
+            <Image x:Name="Img_btnBase2" Height="121" Width="96" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnBase3" HorizontalAlignment="Left" Margin="630,317,0,0" VerticalAlignment="Top" Height="126" Width="100">
+            <Image x:Name="Img_btnBase3" Height="121" Width="96" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnBase4" HorizontalAlignment="Left" Margin="630,454,0,0" VerticalAlignment="Top" Height="126" Width="100">
+            <Image x:Name="Img_btnBase4" Height="121" Width="96" Stretch="Fill"/>
+        </Button>
+
+        <Rectangle x:Name="rettangoloMazzo" HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/RETRO.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="btnMazzo" HorizontalAlignment="Left" Margin="114,462,0,0" VerticalAlignment="Top" Height="111" Width="95" Click="btnMazzo_Click">
+            <Image x:Name="Img_btnMazzo" Height="110" Width="90" Source="/RETRO.jpg" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="btnPozzo" HorizontalAlignment="Left" Margin="292,467,0,0" VerticalAlignment="Top" Height="115" Width="94" Click="btnPozzo_Click">
+            <Image x:Name="Img_btnPozzo" Height="110" Width="90" Stretch="Fill"/>
+        </Button>
+
     </Grid>
 </Window>

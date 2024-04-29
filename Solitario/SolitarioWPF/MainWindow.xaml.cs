@@ -1,6 +1,7 @@
 ﻿using SolitarioWPF;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,18 +30,17 @@ namespace Solitario_A_Croce_WPF
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Istruzioni_Gioco istruzioni_Gioco = new Istruzioni_Gioco();
-            istruzioni_Gioco.Show();
-            
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ButtonIniziaPartita_Click(object sender, RoutedEventArgs e)
         {
             Finestra_Gioco finestra_Gioco= new Finestra_Gioco();
             finestra_Gioco.Show();
             this.Close();
+        }
+
+        private void OpenLink(object sender, RoutedEventArgs e)
+        {
+            string url = "https://docs.google.com/document/d/1QcCqljWaj1_OJeTMCJd6ZT2AEmJBYhfx2dd0lCFIo0g/edit?usp=sharing";
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
         }
     }
 }

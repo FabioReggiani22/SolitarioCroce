@@ -8,14 +8,14 @@
         Title="Solitario a Croce" Height="450" Width="800">
     <Grid>
         <Label Margin="0,25,0,321" HorizontalAlignment="Center" FontSize="40" Width="740" >Benvenuto al gioco del solitario a croce</Label>
-        <Button Margin="206,113,222,228" FontSize="40" Click="Button_Click_1">Inizia a giocare</Button>
+        <Button Margin="206,113,222,228" FontSize="40" Click="ButtonIniziaPartita_Click">Inizia a giocare</Button>
         <Label Margin="0,256,311,110" FontSize="20">Non sai come si gioca?</Label>
-        <Label Margin="30,292,536,62" FontSize="20" Content="Premi il pulsante di aiuto"/>
-        <Button Margin="13,327,739,59" Foreground="Blue" FontSize="40" Content="" BorderBrush="{x:Null}" Click="Button_Click" >
+        <Label Margin="30,283,493,71" FontSize="20" Content="Premi il pulsante di aiuto"/>
+        <Button Margin="10,317,724,59" Foreground="Blue" FontSize="40" Content="" BorderBrush="{x:Null}" Click="OpenLink" >
             <Button.Background>
-                <ImageBrush ImageSource="/-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg"/>
+                <ImageBrush ImageSource="/-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content=" per vedere le regole" HorizontalAlignment="Left" Margin="61,329,0,0" VerticalAlignment="Top" Height="68" Width="228" FontSize="20"/>
+        <Label Content=" per vedere le regole" HorizontalAlignment="Left" Margin="66,317,0,0" VerticalAlignment="Top" Height="68" Width="278" FontSize="20"/>
     </Grid>
 </Window>

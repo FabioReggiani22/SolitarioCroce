@@ -9,6 +9,48 @@
 
   <ItemGroup>
     <None Remove="-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg" />
+    <None Remove="carte\Asso_Bastoni.jpg" />
+    <None Remove="carte\Asso_Coppe.jpg" />
+    <None Remove="carte\Asso_Denara.jpg" />
+    <None Remove="carte\Asso_Spade.jpg" />
+    <None Remove="carte\Cavallo_Bastoni.jpg" />
+    <None Remove="carte\Cavallo_Coppe.jpg" />
+    <None Remove="carte\Cavallo_Denara.jpg" />
+    <None Remove="carte\Cavallo_Spade.jpg" />
+    <None Remove="carte\Cinque_Bastoni.jpg" />
+    <None Remove="carte\Cinque_Coppe.jpg" />
+    <None Remove="carte\Cinque_Denara.jpg" />
+    <None Remove="carte\Cinque_Spade.jpg" />
+    <None Remove="carte\Due_Bastoni.jpg" />
+    <None Remove="carte\Due_Coppe.jpg" />
+    <None Remove="carte\Due_Denara.jpg" />
+    <None Remove="carte\Due_Spade.jpg" />
+    <None Remove="carte\Fante_Bastoni.jpg" />
+    <None Remove="carte\Fante_Coppe.jpg" />
+    <None Remove="carte\Fante_Denara.jpg" />
+    <None Remove="carte\Fante_Spade.jpg" />
+    <None Remove="carte\Quattro_Bastoni.jpg" />
+    <None Remove="carte\Quattro_Coppe.jpg" />
+    <None Remove="carte\Quattro_Denara.jpg" />
+    <None Remove="carte\Quattro_Spade.jpg" />
+    <None Remove="carte\RETRO.jpg" />
+    <None Remove="carte\Re_Bastoni.jpg" />
+    <None Remove="carte\Re_Coppe.jpg" />
+    <None Remove="carte\Re_Denara.jpg" />
+    <None Remove="carte\Re_Spade.jpg" />
+    <None Remove="carte\Sei_Bastoni.jpg" />
+    <None Remove="carte\Sei_Coppe.jpg" />
+    <None Remove="carte\Sei_Denara.jpg" />
+    <None Remove="carte\Sei_Spade.jpg" />
+    <None Remove="carte\Sette_Bastoni.jpg" />
+    <None Remove="carte\Sette_Coppe.jpg" />
+    <None Remove="carte\Sette_Denara.jpg" />
+    <None Remove="carte\Sette_Spade.jpg" />
+    <None Remove="carte\Tre_Bastoni.jpg" />
+    <None Remove="carte\Tre_Coppe.jpg" />
+    <None Remove="carte\Tre_Denara.jpg" />
+    <None Remove="carte\Tre_Spade.jpg" />
+    <None Remove="RETRO.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +61,133 @@
     <Content Include="-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="carte\Asso_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Asso_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Asso_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Asso_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cavallo_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cavallo_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cavallo_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cavallo_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cinque_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cinque_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cinque_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Cinque_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Due_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Due_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Due_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Due_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Fante_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Fante_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Fante_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Fante_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Quattro_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Quattro_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Quattro_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Quattro_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\RETRO.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Re_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Re_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Re_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Re_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sei_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sei_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sei_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sei_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sette_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sette_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sette_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Sette_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Tre_Bastoni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Tre_Coppe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Tre_Denara.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\Tre_Spade.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="RETRO.jpg" />
   </ItemGroup>
 
 </Project>
