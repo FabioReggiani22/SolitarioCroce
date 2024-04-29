@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -50,7 +51,7 @@ namespace Solitario_A_Croce_WPF
         }
 
 
-        private void btnMazzo_Click(object sender, RoutedEventArgs e)
+        private async void btnMazzo_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -69,9 +70,11 @@ namespace Solitario_A_Croce_WPF
                 animazione.Begin();
                 Img_DaMazzo_APozzo.Source= new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
                 // 
-                Storyboard_Completed();
 
-
+                animazione.Completed += (o, s) => {
+                    Img_btnPozzo.Source = null;
+                    Img_btnPozzo.Source = new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
+                };
 
             }
             catch
@@ -83,21 +86,7 @@ namespace Solitario_A_Croce_WPF
             }
         }
 
-        private void Storyboard_Completed()
-        {
-            _giocoSolitario.PescaCarta();
-            _bottoneConCuiFareSwitch.Name = "btnPozzo";
-
-
-            Carta carta;
-            carta = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
-            string valCarta = carta.ValoreCarta.ToString();
-            string semCarta = carta.SemeCarta.ToString();
-
-            Thread.Sleep(2000);
-            Img_btnPozzo.Source = null;
-            Img_btnPozzo.Source = new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
-        }
+     
     
        
 
@@ -163,6 +152,7 @@ namespace Solitario_A_Croce_WPF
         {
             Button bottoneCliccato = (Button)sender;
             string nomeBottone = bottoneCliccato.Name;
+            bottoneCliccato.Background = Brushes.Green;
 
             // Se è stato già selezionato un  bottone
             if (_primoBottoneSelezionato)
@@ -193,11 +183,13 @@ namespace Solitario_A_Croce_WPF
                 // Resetta lo stato della selezione
                 _primoBottoneSelezionato = false;
                 _primoBottone = null;
+                bottoneCliccato.Background = Brushes.Green;
             }
             else  // Se è il primo bottone selezionato, memorizza il bottone e imposta il flag a true
             {
                 _primoBottone = bottoneCliccato;
                 _primoBottoneSelezionato = true;
+               
 
                 string nome = _primoBottone.Name;
                 string id = TrovaIdMazzettoDaNomeBottone(nome);
@@ -229,9 +221,12 @@ namespace Solitario_A_Croce_WPF
                         _cartaSelezionataDalPozzo = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
                     }
                 }
-
-
+                _primoBottone.Background = Brushes.Green;
+               
             }
+           
+         
+
         }
 
         private string TrovaIdMazzettoDaNomeBottone(string nomeBottone)
@@ -243,55 +238,15 @@ namespace Solitario_A_Croce_WPF
                 case "btnMazzetto3": return "C3";
                 case "btnMazzetto4": return "C4";
                 case "btnMazzetto5": return "C5";
+                case "btnBase1": return "B1";
+                case "btnBase2": return "B2";
+                case "btnBase3": return "B3";
+                case "btnBase4": return "B4";
+                case "btnPozzo": return "P";
                 default: return null;
             }
         }
 
-        private void btnMazzetto_Click1(object sender, RoutedEventArgs e)
-        {
-            if (_applicaSwitch)
-            {
-                //caso in cui metto la carta dal pozzo a uno dei mazzetti.
-
-                Button bottoneCliccato = (Button)sender;
-                string nomeBottoneCliccato= bottoneCliccato.Name;
-                string[] arrayInfoBottone = nomeBottoneCliccato.Split("btn");
-                string nomeBottone = arrayInfoBottone[1]; 
-
-                //scopro quale è il nome del mazzetto di cui prendre la carta.
-                
-                
-
-                Mazzetto[] listaCroci = _giocoSolitario.Croci;
-
-                if (nomeBottone == "Mazzetto1")
-                {
-                    _giocoSolitario.SpostaCarte(_giocoSolitario.Pozzo.Last(), "C1");
-                }
-                else if (nomeBottone == "Mazzetto2")
-                {
-                    _giocoSolitario.SpostaCarte(_giocoSolitario.Pozzo.Last(), "C2");
-                }
-                else if (nomeBottone == "Mazzetto3")
-                {
-                    _giocoSolitario.SpostaCarte(_giocoSolitario.Pozzo.Last(), "C3");
-                }
-                else if (nomeBottone == "Mazzetto4")
-                {
-                    _giocoSolitario.SpostaCarte(_giocoSolitario.Pozzo.Last(), "C4");
-                }
-                else if (nomeBottone == "Mazzetto5")
-                {
-                    _giocoSolitario.SpostaCarte(_giocoSolitario.Pozzo.Last(), "C5");
-                }
-            }
-            else
-            {
-                //caso in cui metto la carta dal mazzetto a unaltro mazzetto.
-
-            }
-
-        }
 
         private void btnFinePartita_Click(object sender, RoutedEventArgs e)
         {

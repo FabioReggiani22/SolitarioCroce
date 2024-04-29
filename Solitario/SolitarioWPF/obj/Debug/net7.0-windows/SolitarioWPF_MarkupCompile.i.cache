@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alan.soldati\Desktop\Solitario Croce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\
 SolitarioWPF
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\alan.soldati\Desktop\Solitario Croce\SolitarioCroce\Solitario\SolitarioWPF\App.xaml
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\App.xaml
 4-920012436
 42-112537990
 81573540665
-199-134513208
+199-1098099225
 Esito Partita.xaml;Finestra Gioco.xaml;Istruzioni Gioco.xaml;MainWindow.xaml;
 
-True
+False
 

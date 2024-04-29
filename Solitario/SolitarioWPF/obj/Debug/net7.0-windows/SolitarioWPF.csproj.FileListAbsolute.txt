@@ -390,3 +390,76 @@ C:\Users\alan.soldati\Desktop\Solitario Croce\SolitarioCroce\Solitario\Solitario
 C:\Users\alan.soldati\Desktop\Solitario Croce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.pdb
 C:\Users\alan.soldati\Desktop\Solitario Croce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.genruntimeconfig.cache
 C:\Users\alan.soldati\Desktop\Solitario Croce\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\ref\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.exe
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Asso_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Asso_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Asso_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Asso_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cavallo_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cavallo_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cavallo_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cavallo_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cinque_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cinque_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cinque_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Cinque_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Due_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Due_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Due_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Due_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Fante_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Fante_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Fante_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Fante_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Quattro_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Quattro_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Quattro_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Quattro_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\RETRO.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Re_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Re_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Re_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Re_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sei_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sei_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sei_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sei_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sette_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sette_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sette_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Sette_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Tre_Bastoni.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Tre_Coppe.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Tre_Denara.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\carte\Tre_Spade.jpg
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.deps.json
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.runtimeconfig.json
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\SolitarioWPF.pdb
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\Solitario.dll
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\bin\Debug\net7.0-windows\Solitario.pdb
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.csproj.AssemblyReference.cache
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Esito Partita.g.cs
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Finestra Gioco.g.cs
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Istruzioni Gioco.g.cs
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF_Content.g.cs
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF_MarkupCompile.cache
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF_MarkupCompile.lref
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Esito Partita.baml
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Finestra Gioco.baml
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\Istruzioni Gioco.baml
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.g.resources
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.AssemblyInfoInputs.cache
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.AssemblyInfo.cs
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.csproj.CoreCompileInputs.cache
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.csproj.CopyComplete
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\refint\SolitarioWPF.dll
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.pdb
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\SolitarioWPF.genruntimeconfig.cache
+C:\Users\alan.soldati\Desktop\Solitario Definitivo\SolitarioCroce\Solitario\SolitarioWPF\obj\Debug\net7.0-windows\ref\SolitarioWPF.dll
