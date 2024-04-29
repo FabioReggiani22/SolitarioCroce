@@ -22,14 +22,8 @@ namespace SolitarioCroce
         private void InizializzaMazzo()
         {
             int i = 0;
-            char semeChar;
             for (int seme = 1; seme <= 4; seme++)
             {
-                if(seme == 1) { semeChar = 'A'; }
-                if(seme==2) { semeChar = 'B'; }
-                if(seme==3) {  semeChar = 'C'; }
-                else { semeChar = 'D'; }
-                semeChar = 'A';
                 for (int valore = 1; valore <= 10; valore++)
                 {
                     _carte[i] = new Carta(valore, (Seme)seme);

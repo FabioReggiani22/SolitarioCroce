@@ -30,7 +30,7 @@ namespace SolitarioCroce
     {
         private Valore _valoreCarta;
         private Seme _semeCarta;
-        private Uri _uri;
+        private string _nomeFile;
 
         public Carta(int valoreCarta, Seme semeCarta)
         {
@@ -46,7 +46,7 @@ namespace SolitarioCroce
             else if ((int)SemeCarta == 2) seme = 'B';
             else if ((int)SemeCarta == 3) seme = 'C';
             else seme = 'D';
-            _uri = new Uri($"{valore}{seme}.jpg");
+            _nomeFile = $"{valore}{seme}.jpg";
         }
 
         public Valore ValoreCarta
@@ -66,11 +66,11 @@ namespace SolitarioCroce
                 _semeCarta = value;
             }
         }
-        public Uri Uri
+        public string NomeFile
         {
             get
             {
-                return _uri;
+                return _nomeFile;
             }
         }
 
