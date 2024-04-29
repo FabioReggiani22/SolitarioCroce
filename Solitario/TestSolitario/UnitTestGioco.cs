@@ -37,5 +37,15 @@ namespace TestSolitario
             gioco.Resa();
             Assert.ThrowsException<ArgumentException>(() => gioco.SpostaCarte(carta, "aa"));
         }
+
+        [TestMethod]
+        public void Gioco_PescaCarta()
+        {
+            Mazzo mazzo = new Mazzo();
+            Gioco gioco = new Gioco(mazzo);
+            Carta carta = mazzo.VisualizzaPrimaCarta();
+            gioco.PescaCarta();
+            Assert.AreEqual(gioco.Pozzo[0], carta);
+        }
     }
 }

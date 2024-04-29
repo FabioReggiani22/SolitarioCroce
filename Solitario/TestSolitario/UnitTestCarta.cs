@@ -30,5 +30,12 @@ namespace TestSolitario
             Carta carta = new Carta(1, Seme.Denara);
             Assert.AreEqual(Seme.Denara, carta.SemeCarta);
         }
+        [TestMethod]
+        public void Carta_WithValidUri()
+        {
+            Carta carta = new Carta(1, Seme.Denara);
+            string nomeFile = "1A.jpg";
+            Assert.AreEqual(nomeFile, carta.NomeFile);
+        }
     }
 }
