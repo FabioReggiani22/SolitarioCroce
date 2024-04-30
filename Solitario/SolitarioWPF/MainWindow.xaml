@@ -16,6 +16,6 @@
                 <ImageBrush ImageSource="/-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content=" per vedere le regole" HorizontalAlignment="Left" Margin="66,317,0,0" VerticalAlignment="Top" Height="68" Width="278" FontSize="20"/>
+        <Label Content=" per vedere le regole" HorizontalAlignment="Left" Margin="76,312,0,0" VerticalAlignment="Top" Height="68" Width="278" FontSize="20"/>
     </Grid>
 </Window>

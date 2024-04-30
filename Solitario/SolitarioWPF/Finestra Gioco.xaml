@@ -43,7 +43,7 @@
         <Button x:Name="btnMazzetto5" HorizontalAlignment="Left" Margin="216,279,0,0" VerticalAlignment="Top" Height="115" Width="95" Click="btnMazzetto_Click">
             <Image x:Name="Img_btnMazzetto5" Height="109" Width="90" Stretch="Fill"/>
         </Button>
-        <Button x:Name="btnMazzetto1" HorizontalAlignment="Left" Margin="216,40,0,0" VerticalAlignment="Top" Height="114" Width="95" Click="btnMazzetto_Click" Background="#FFDDDDDD">
+        <Button x:Name="btnMazzetto1" HorizontalAlignment="Left" Margin="216,40,0,0" VerticalAlignment="Top" Height="114" Width="95" Click="btnMazzetto_Click" >
             <Image x:Name="Img_btnMazzetto1" Height="109" Width="90" Stretch="Fill"/>
         </Button>
         <Rectangle HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97" Fill="#FFDDDDDD"/>

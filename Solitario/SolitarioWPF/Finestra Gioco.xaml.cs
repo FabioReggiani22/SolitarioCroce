@@ -30,7 +30,7 @@ namespace Solitario_A_Croce_WPF
         
         bool _applicaSwitch;
         Button _bottoneConCuiFareSwitch;
-        Carta _cartaSelezionataDalPozzo;
+        Carta _cartaSelezionata;
 
 
 
@@ -44,7 +44,7 @@ namespace Solitario_A_Croce_WPF
 
             _giocoSolitario = new Gioco(mazzo);
 
-            InizializzaCarteNellaPartita();
+            InizializzaCarteInizioPartita();
             _bottoneConCuiFareSwitch = new Button();
             
 
@@ -65,16 +65,23 @@ namespace Solitario_A_Croce_WPF
                 string semCarta = carta.SemeCarta.ToString();
 
 
+
+
+
                 //animazione
                 Storyboard animazione = (Storyboard)FindResource("Storyboard_DAMazzo_APozzo");
                 animazione.Begin();
                 Img_DaMazzo_APozzo.Source= new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
-                // 
 
                 animazione.Completed += (o, s) => {
                     Img_btnPozzo.Source = null;
                     Img_btnPozzo.Source = new BitmapImage(new Uri($"carte/{valCarta}_{semCarta}.jpg", UriKind.Relative));
+                    
                 };
+                // 
+
+
+
 
             }
             catch
@@ -86,57 +93,205 @@ namespace Solitario_A_Croce_WPF
             }
         }
 
-     
-    
-       
-
-        private void InizializzaCarteNellaPartita()
+        private void InizializzaCarteInizioPartita()
         {
             List<Mazzetto> listaCroci = new List<Mazzetto>();
             listaCroci = _giocoSolitario.Croci.ToList();
 
+
+
+
+
+
             Carta CartaMazzetto1;
             
             CartaMazzetto1 = listaCroci[0].VisualizzaPrimaCarta;
-            string valCartaMazz1 = CartaMazzetto1.ValoreCarta.ToString();
-            string semCartaMazz1 = CartaMazzetto1.SemeCarta.ToString();
-            Img_btnMazzetto1.Source = new BitmapImage(new Uri($"carte/{valCartaMazz1}_{semCartaMazz1}.jpg", UriKind.Relative));
 
-            Carta CartaMazzetto2;
             
+           
+                string valCartaMazz1 = CartaMazzetto1.ValoreCarta.ToString();
+                string semCartaMazz1 = CartaMazzetto1.SemeCarta.ToString();
+                Img_btnMazzetto1.Source = new BitmapImage(new Uri($"carte/{valCartaMazz1}_{semCartaMazz1}.jpg", UriKind.Relative));
+            
+            
+
+            //mazzetto2
+            Carta CartaMazzetto2;
+
             CartaMazzetto2 = listaCroci[1].VisualizzaPrimaCarta;
-            string valCartaMazz2 = CartaMazzetto2.ValoreCarta.ToString();
-            string semCartaMazz2 = CartaMazzetto2.SemeCarta.ToString();
-            Img_btnMazzetto2.Source = new BitmapImage(new Uri($"carte/{valCartaMazz2}_{semCartaMazz2}.jpg", UriKind.Relative));
+
+           
+
+                string valCartaMazz2 = CartaMazzetto2.ValoreCarta.ToString();
+                string semCartaMazz2 = CartaMazzetto2.SemeCarta.ToString();
+                Img_btnMazzetto2.Source = new BitmapImage(new Uri($"carte/{valCartaMazz2}_{semCartaMazz2}.jpg", UriKind.Relative));
+            
+            
+
 
             Carta CartaMazzetto3;
             
             CartaMazzetto3 = listaCroci[2].VisualizzaPrimaCarta;
-            string valCartaMazz3 = CartaMazzetto3.ValoreCarta.ToString();
-            string semCartaMazz3 = CartaMazzetto3.SemeCarta.ToString();
-            Img_btnMazzetto3.Source = new BitmapImage(new Uri($"carte/{valCartaMazz3}_{semCartaMazz3}.jpg", UriKind.Relative));
+
+           
+                string valCartaMazz3 = CartaMazzetto3.ValoreCarta.ToString();
+                string semCartaMazz3 = CartaMazzetto3.SemeCarta.ToString();
+                Img_btnMazzetto3.Source = new BitmapImage(new Uri($"carte/{valCartaMazz3}_{semCartaMazz3}.jpg", UriKind.Relative));
+
+           
+            
 
             Carta CartaMazzetto4;
             
             CartaMazzetto4 = listaCroci[3].VisualizzaPrimaCarta;
-            string valCartaMazz4 = CartaMazzetto4.ValoreCarta.ToString();
-            string semCartaMazz4 = CartaMazzetto4.SemeCarta.ToString();
-            Img_btnMazzetto4.Source = new BitmapImage(new Uri($"carte/{valCartaMazz4}_{semCartaMazz4}.jpg", UriKind.Relative));
+
+           
+                string valCartaMazz4 = CartaMazzetto4.ValoreCarta.ToString();
+                string semCartaMazz4 = CartaMazzetto4.SemeCarta.ToString();
+                Img_btnMazzetto4.Source = new BitmapImage(new Uri($"carte/{valCartaMazz4}_{semCartaMazz4}.jpg", UriKind.Relative));
+            
+            
 
             Carta CartaMazzetto5;
             
+             CartaMazzetto5 = listaCroci[4].VisualizzaPrimaCarta;
+
+          
+                string valCartaMazz5 = CartaMazzetto5.ValoreCarta.ToString();
+                string semCartaMazz5 = CartaMazzetto5.SemeCarta.ToString();
+                Img_btnMazzetto5.Source = new BitmapImage(new Uri($"carte/{valCartaMazz5}_{semCartaMazz5}.jpg", UriKind.Relative));
+            
+
+
+           
+
+        }
+
+
+
+        private void InizializzaCarteNellaPartita(Carta cartaSelezionata)
+        {
+            List<Mazzetto> listaCroci = new List<Mazzetto>();
+            listaCroci = _giocoSolitario.Croci.ToList();
+
+
+            if (_giocoSolitario.Pozzo.Count != 0)
+            {
+                Carta CartaPozzo;
+
+                CartaPozzo = _giocoSolitario.Pozzo.Last();
+                cartaSelezionata = CartaPozzo;
+                if (CartaPozzo == null)
+                {
+                    CartaPozzo = cartaSelezionata;
+                    Img_btnPozzo.Source = null;
+
+                }
+
+                if (CartaPozzo != null)
+                {
+                    Img_btnPozzo.Source = null;
+                    _giocoSolitario.Pozzo.Remove(CartaPozzo);
+                    Carta nuovaUltimaCartaPozzo = _giocoSolitario.Pozzo.Last();
+                    string valCartaPozzo = nuovaUltimaCartaPozzo.ValoreCarta.ToString();
+                    string semCartaPozzo = nuovaUltimaCartaPozzo.SemeCarta.ToString();
+                    Img_btnPozzo.Source = new BitmapImage(new Uri($"carte/{valCartaPozzo}_{semCartaPozzo}.jpg", UriKind.Relative));
+                }
+            }
+
+
+
+
+            Carta CartaMazzetto1;
+
+            CartaMazzetto1 = listaCroci[0].VisualizzaPrimaCarta;
+
+           
+            if (CartaMazzetto1 == null)
+            {
+                CartaMazzetto1 = cartaSelezionata;
+                string valCartaMazz1 = CartaMazzetto1.ValoreCarta.ToString();
+                string semCartaMazz1 = CartaMazzetto1.SemeCarta.ToString();
+                Img_btnMazzetto1.Source = new BitmapImage(new Uri($"carte/{valCartaMazz1}_{semCartaMazz1}.jpg", UriKind.Relative));
+            }
+
+
+
+            //mazzetto2
+            Carta CartaMazzetto2;
+
+            CartaMazzetto2 = listaCroci[1].VisualizzaPrimaCarta;
+
+            
+
+            if (CartaMazzetto2 == null)
+            {
+                CartaMazzetto2 = cartaSelezionata;
+                string valCartaMazz2 = CartaMazzetto2.ValoreCarta.ToString();
+                string semCartaMazz2 = CartaMazzetto2.SemeCarta.ToString();
+                Img_btnMazzetto2.Source = new BitmapImage(new Uri($"carte/{valCartaMazz2}_{semCartaMazz2}.jpg", UriKind.Relative));
+            }
+
+
+
+            Carta CartaMazzetto3;
+
+            CartaMazzetto3 = listaCroci[2].VisualizzaPrimaCarta;
+
+          
+
+            if (CartaMazzetto3 == null)
+            {
+                CartaMazzetto3 = cartaSelezionata;
+                string valCartaMazz3 = CartaMazzetto3.ValoreCarta.ToString();
+                string semCartaMazz3 = CartaMazzetto3.SemeCarta.ToString();
+                Img_btnMazzetto3.Source = new BitmapImage(new Uri($"carte/{valCartaMazz3}_{semCartaMazz3}.jpg", UriKind.Relative));
+
+            }
+
+
+            Carta CartaMazzetto4;
+
+            CartaMazzetto4 = listaCroci[3].VisualizzaPrimaCarta;
+
+           
+
+            if (CartaMazzetto4 == null)
+            {
+                CartaMazzetto4 = cartaSelezionata;
+                string valCartaMazz4 = CartaMazzetto4.ValoreCarta.ToString();
+                string semCartaMazz4 = CartaMazzetto4.SemeCarta.ToString();
+                Img_btnMazzetto4.Source = new BitmapImage(new Uri($"carte/{valCartaMazz4}_{semCartaMazz4}.jpg", UriKind.Relative));
+            }
+
+
+            Carta CartaMazzetto5;
+
             CartaMazzetto5 = listaCroci[4].VisualizzaPrimaCarta;
-            string valCartaMazz5 = CartaMazzetto5.ValoreCarta.ToString();
-            string semCartaMazz5 = CartaMazzetto5.SemeCarta.ToString();
-            Img_btnMazzetto5.Source = new BitmapImage(new Uri($"carte/{valCartaMazz5}_{semCartaMazz5}.jpg", UriKind.Relative));
+
+          
+
+            if (CartaMazzetto5 == null)
+            {
+                CartaMazzetto5 = cartaSelezionata;
+                string valCartaMazz5 = CartaMazzetto5.ValoreCarta.ToString();
+                string semCartaMazz5 = CartaMazzetto5.SemeCarta.ToString();
+                Img_btnMazzetto5.Source = new BitmapImage(new Uri($"carte/{valCartaMazz5}_{semCartaMazz5}.jpg", UriKind.Relative));
+            }
+
+
+
+
         }
 
         private void btnPozzo_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                _cartaSelezionataDalPozzo = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count-1];
+                _cartaSelezionata = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count-1];
                 _applicaSwitch = true;
+                Img_btnPozzo = null;
+                btnMazzetto_Click(sender,e);
             }
             catch
             {
@@ -147,6 +302,7 @@ namespace Solitario_A_Croce_WPF
         
         private bool _primoBottoneSelezionato = false;
         private Button _primoBottone;
+
 
         private void btnMazzetto_Click(object sender, RoutedEventArgs e)
         {
@@ -164,11 +320,12 @@ namespace Solitario_A_Croce_WPF
                     // Sposta la carta solo se ho selezionato un posto diverso da qwuello di partenza.
                     if (idMazzettoDestinazione != null && idMazzettoDestinazione != TrovaIdMazzettoDaNomeBottone(_primoBottone.Name))
                     {
-                        _giocoSolitario.SpostaCarte(_cartaSelezionataDalPozzo, idMazzettoDestinazione);
-
-
+                        _giocoSolitario.SpostaCarte(_cartaSelezionata, idMazzettoDestinazione);
 
                         //aggiornare la SOURCE DELLA CARTAAAA QUII DENTRO 
+                        InizializzaCarteNellaPartita(_cartaSelezionata);
+                      
+
                     }
                     else
                     {
@@ -182,24 +339,28 @@ namespace Solitario_A_Croce_WPF
 
                 // Resetta lo stato della selezione
                 _primoBottoneSelezionato = false;
-                _primoBottone = null;
-                bottoneCliccato.Background = Brushes.Green;
+                
+                _primoBottone.Background = Brushes.Silver; // Torna al colore silver
+                bottoneCliccato.Background = Brushes.Silver;
+                
             }
             else  // Se è il primo bottone selezionato, memorizza il bottone e imposta il flag a true
             {
                 _primoBottone = bottoneCliccato;
                 _primoBottoneSelezionato = true;
-               
 
+                List<Carta> pozzo = _giocoSolitario.Pozzo;
                 string nome = _primoBottone.Name;
                 string id = TrovaIdMazzettoDaNomeBottone(nome);
                 Mazzetto[] croci = _giocoSolitario.Croci;
+                
+
                 bool trovato = false;
                 foreach (Mazzetto mazzetto in croci)
                 {
                     if (mazzetto.Id == id)
                     {
-                        _cartaSelezionataDalPozzo = mazzetto.VisualizzaPrimaCarta;
+                        _cartaSelezionata = mazzetto.VisualizzaPrimaCarta;
                         trovato = true;
                         break;
                     }
@@ -211,15 +372,24 @@ namespace Solitario_A_Croce_WPF
                     {
                         if (mazzetto.Id == id)
                         {
-                            _cartaSelezionataDalPozzo = mazzetto.VisualizzaPrimaCarta;
+                            _cartaSelezionata = mazzetto.VisualizzaPrimaCarta;
                             trovato = true;
                             break;
                         }
                     }
                     if (!trovato)
                     {
-                        _cartaSelezionataDalPozzo = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
+                        _cartaSelezionata = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
                     }
+                }
+            
+                else if(pozzo.Count!=0)
+                {
+                    
+     
+                    _cartaSelezionata = pozzo.Last();
+               
+                  
                 }
                 _primoBottone.Background = Brushes.Green;
                
