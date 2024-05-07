@@ -2319,23 +2319,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\francesco.righi\\.nuget\\packages\\": {},
+    "C:\\Users\\alans\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\francesco.righi\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj",
+      "projectUniqueName": "C:\\Users\\alans\\Desktop\\Solitario Croce Funzionate\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj",
       "projectName": "TestSolitario",
-      "projectPath": "C:\\Users\\francesco.righi\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj",
-      "packagesPath": "C:\\Users\\francesco.righi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\francesco.righi\\Desktop\\SolitarioCroce\\Solitario\\TestSolitario\\obj\\",
+      "projectPath": "C:\\Users\\alans\\Desktop\\Solitario Croce Funzionate\\SolitarioCroce\\Solitario\\TestSolitario\\TestSolitario.csproj",
+      "packagesPath": "C:\\Users\\alans\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alans\\Desktop\\Solitario Croce Funzionate\\SolitarioCroce\\Solitario\\TestSolitario\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\francesco.righi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alans\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2344,15 +2344,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\francesco.righi\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj": {
-              "projectPath": "C:\\Users\\francesco.righi\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj"
+            "C:\\Users\\alans\\Desktop\\Solitario Croce Funzionate\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj": {
+              "projectPath": "C:\\Users\\alans\\Desktop\\Solitario Croce Funzionate\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj"
             }
           }
         }
@@ -2395,12 +2394,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.314\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Zd0HdBp/3+zKB69WVO4BRgbKr6KrPAFRolNKni92HfUf6wWbbQZfM9witZwVXUgLDg9y8c3Mt74XSrFanUoTdw==",
+  "dgSpecHash": "g9R9GYPgylf5HDp34ElS8UEJeurDXdsjFltjCItO0YbKY7qdFyvG2ynTHvEyjIsTl64QRYVGmv/uPO3KNI3W7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fabio.reggiani\\Desktop\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\alans\\Desktop\\Solitario Croce Funzionate\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alans\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\alans\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\alans\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

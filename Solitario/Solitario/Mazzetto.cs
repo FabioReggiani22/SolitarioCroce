@@ -13,7 +13,7 @@ namespace SolitarioCroce
     public class Mazzetto
     {
         private TipoMazzetto _tipoMazzetto;
-        private Carta[]? _carte;
+        private Carta?[] _carte;
         private int _indice;
         private string _id;
 
@@ -74,18 +74,20 @@ namespace SolitarioCroce
         public void TogliPrimaCarta()
         {
             if (_indice == 0) throw new ArgumentException ("Non ci sono carte nel mazzetto");
-            _carte[_indice - 1] = null;
+            _carte[_indice-1] = null;
+            _indice--;
         }
 
         private void VerificaOrdineBasi(Carta carta)
         {
+            if (carta == null) throw new ArgumentNullException("carta null");
             bool errore = false;
             if (_indice == 0 && carta.ValoreCarta != Valore.Asso) errore = true;
             else
             {
                 if (_indice != 0 && ((int)carta.ValoreCarta - 1 != (int)_carte[_indice-1].ValoreCarta || carta.SemeCarta != _carte[_indice-1].SemeCarta)) errore = true;
             }
-            if (errore) { throw new ArgumentException("La carta non può essere messa nelle basi"); }
+            if (errore) { throw new ArgumentException("La carta non può essere messa nelle basi" + carta.ValoreCarta.ToString()+carta.SemeCarta.ToString()); }
         }
 
         private void VerificaOrdineCroci(Carta carta)

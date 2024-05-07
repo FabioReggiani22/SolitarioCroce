@@ -9,6 +9,46 @@
 
   <ItemGroup>
     <None Remove="-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg" />
+    <None Remove="carte\10A.jpg" />
+    <None Remove="carte\10B.jpg" />
+    <None Remove="carte\10C.jpg" />
+    <None Remove="carte\10D.jpg" />
+    <None Remove="carte\1A.jpg" />
+    <None Remove="carte\1B.jpg" />
+    <None Remove="carte\1C.jpg" />
+    <None Remove="carte\1D.jpg" />
+    <None Remove="carte\2A.jpg" />
+    <None Remove="carte\2B.jpg" />
+    <None Remove="carte\2C.jpg" />
+    <None Remove="carte\2D.jpg" />
+    <None Remove="carte\3A.jpg" />
+    <None Remove="carte\3B.jpg" />
+    <None Remove="carte\3C.jpg" />
+    <None Remove="carte\3D.jpg" />
+    <None Remove="carte\4A.jpg" />
+    <None Remove="carte\4B.jpg" />
+    <None Remove="carte\4C.jpg" />
+    <None Remove="carte\4D.jpg" />
+    <None Remove="carte\5A.jpg" />
+    <None Remove="carte\5B.jpg" />
+    <None Remove="carte\5C.jpg" />
+    <None Remove="carte\5D.jpg" />
+    <None Remove="carte\6A.jpg" />
+    <None Remove="carte\6B.jpg" />
+    <None Remove="carte\6C.jpg" />
+    <None Remove="carte\6D.jpg" />
+    <None Remove="carte\7A.jpg" />
+    <None Remove="carte\7B.jpg" />
+    <None Remove="carte\7C.jpg" />
+    <None Remove="carte\7D.jpg" />
+    <None Remove="carte\8A.jpg" />
+    <None Remove="carte\8B.jpg" />
+    <None Remove="carte\8C.jpg" />
+    <None Remove="carte\8D.jpg" />
+    <None Remove="carte\9A.jpg" />
+    <None Remove="carte\9B.jpg" />
+    <None Remove="carte\9C.jpg" />
+    <None Remove="carte\9D.jpg" />
     <None Remove="carte\Asso_Bastoni.jpg" />
     <None Remove="carte\Asso_Coppe.jpg" />
     <None Remove="carte\Asso_Denara.jpg" />
@@ -50,7 +90,12 @@
     <None Remove="carte\Tre_Coppe.jpg" />
     <None Remove="carte\Tre_Denara.jpg" />
     <None Remove="carte\Tre_Spade.jpg" />
+    <None Remove="Progetto senza titolo %286%29.png" />
     <None Remove="RETRO.jpg" />
+    <None Remove="Sfondo Verde.png" />
+    <None Remove="sfondo.jpg" />
+    <None Remove="Tablet.png" />
+    <None Remove="TV.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -61,129 +106,138 @@
     <Content Include="-20-mb-format-psd-color-theme-blue-white-keywords-information-icon-2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Asso_Bastoni.jpg">
+    <Content Include="carte\10A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Asso_Coppe.jpg">
+    <Content Include="carte\10B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Asso_Denara.jpg">
+    <Content Include="carte\10C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Asso_Spade.jpg">
+    <Content Include="carte\10D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cavallo_Bastoni.jpg">
+    <Content Include="carte\1A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cavallo_Coppe.jpg">
+    <Content Include="carte\1B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cavallo_Denara.jpg">
+    <Content Include="carte\1C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cavallo_Spade.jpg">
+    <Content Include="carte\1D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cinque_Bastoni.jpg">
+    <Content Include="carte\2A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cinque_Coppe.jpg">
+    <Content Include="carte\2B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cinque_Denara.jpg">
+    <Content Include="carte\2C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Cinque_Spade.jpg">
+    <Content Include="carte\2D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Due_Bastoni.jpg">
+    <Content Include="carte\3A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Due_Coppe.jpg">
+    <Content Include="carte\3B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Due_Denara.jpg">
+    <Content Include="carte\3C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Due_Spade.jpg">
+    <Content Include="carte\3D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Fante_Bastoni.jpg">
+    <Content Include="carte\4A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Fante_Coppe.jpg">
+    <Content Include="carte\4B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Fante_Denara.jpg">
+    <Content Include="carte\4C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Fante_Spade.jpg">
+    <Content Include="carte\4D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Quattro_Bastoni.jpg">
+    <Content Include="carte\5A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Quattro_Coppe.jpg">
+    <Content Include="carte\5B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Quattro_Denara.jpg">
+    <Content Include="carte\5C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Quattro_Spade.jpg">
+    <Content Include="carte\5D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\6A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\6B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\6C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\6D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\7A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\7B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\7C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\7D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\8A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\8B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\8C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\8D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\9A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\9B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\9C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="carte\9D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="carte\RETRO.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Re_Bastoni.jpg">
+    <Content Include="TV.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="carte\Re_Coppe.jpg">
+    <Resource Include="Progetto senza titolo (6).png" />
+    <Resource Include="Sfondo Verde.png" />
+    <Resource Include="sfondo.jpg" />
+    <Resource Include="Tablet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Re_Denara.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Re_Spade.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sei_Bastoni.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sei_Coppe.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sei_Denara.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sei_Spade.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sette_Bastoni.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sette_Coppe.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sette_Denara.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Sette_Spade.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Tre_Bastoni.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Tre_Coppe.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Tre_Denara.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="carte\Tre_Spade.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

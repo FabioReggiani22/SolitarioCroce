@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SolitarioWPF
-build_property.ProjectDir = C:\Users\alan.soldati\Desktop\Solitario Croce\Solitario Croce\SolitarioCroce\Solitario\SolitarioWPF\
+build_property.ProjectDir = C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\SolitarioWPF\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

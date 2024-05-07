@@ -94,5 +94,12 @@ namespace SolitarioCroce
             }
             return res;
         }
+        public int Lunghezza
+        {
+            get
+            {
+                return 40-_indexExtraction;
+            }
+        }
     }
 }

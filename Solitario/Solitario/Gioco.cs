@@ -73,8 +73,11 @@ namespace SolitarioCroce
                 {
                     TrovaMazzetto(idMazzetto, out mazzetto);
                     if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
+                    //servirebbe un "controlla se carta aggiungibile"
                     mazzetto.AggiungiCarta(carta);
                     CercaERimuoviCarta(carta);
+                    CercaERimuoviCarta(carta);
+                    mazzetto.AggiungiCarta(carta);         
                 }
                 catch (Exception ex) { throw ex; }
             }

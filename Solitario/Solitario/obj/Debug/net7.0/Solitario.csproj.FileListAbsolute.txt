@@ -10,3 +10,27 @@ C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net
 C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\refint\Solitario.dll
 C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.pdb
 C:\Users\fabio.reggiani\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\ref\Solitario.dll
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.deps.json
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.dll
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.pdb
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfoInputs.cache
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfo.cs
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.csproj.CoreCompileInputs.cache
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.sourcelink.json
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.dll
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\refint\Solitario.dll
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.pdb
+C:\Users\loren\OneDrive\Desktop\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\ref\Solitario.dll
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.deps.json
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.dll
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.pdb
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfoInputs.cache
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfo.cs
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.csproj.CoreCompileInputs.cache
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.sourcelink.json
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.dll
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\refint\Solitario.dll
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.pdb
+C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\ref\Solitario.dll

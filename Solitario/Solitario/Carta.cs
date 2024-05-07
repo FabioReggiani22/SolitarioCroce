@@ -46,7 +46,7 @@ namespace SolitarioCroce
             else if ((int)SemeCarta == 2) seme = 'B';
             else if ((int)SemeCarta == 3) seme = 'C';
             else seme = 'D';
-            _nomeFile = $"{valore}{seme}.jpg";
+            _nomeFile = $"carte/{valore}{seme}.jpg";
         }
 
         public Valore ValoreCarta

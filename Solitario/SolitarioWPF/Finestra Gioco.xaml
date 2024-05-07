@@ -1,14 +1,17 @@
-﻿<Window x:Name="story" x:Class="Solitario_A_Croce_WPF.Finestra_Gioco"
+﻿<Window x:Name="grid" x:Class="Solitario_A_Croce_WPF.Finestra_Gioco"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Solitario_A_Croce_WPF"
         mc:Ignorable="d"
-        Title="Finestra_Gioco" Height="700" Width="800">
+        
+        PreviewMouseRightButtonDown="AnnullaSelezione_ConClick_TastoDestro"
+        Title="Finestra_Gioco" Height="700" Width="800" WindowStartupLocation="CenterScreen">
+
     <Window.Resources>
         <Storyboard x:Key="Storyboard_DAMazzo_APozzo">
-            
+
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DaMazzo_APozzo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="178"/>
@@ -25,66 +28,225 @@
                 <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Stretch.Fill}"/>
                 <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Stretch.Fill}"/>
             </ObjectAnimationUsingKeyFrames>
-            
+
+        </Storyboard>
+        <Storyboard x:Key="Storyboard_DAPozzo_AMazzetto1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-75.667"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-427"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard_DAPozzo_AMazzetto2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-177.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-309"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard_DAPozzo_AMazzetto3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-76"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-0.666"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-309.332"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard_DAPozzo_AMazzetto4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="25.168"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-308.334"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.004"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard_DAPozzo_AMazzetto5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-76"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Img_DAPozzo_AMazzetto5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-188"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
-    <Grid>
+    <Window.Background>
+        <ImageBrush ImageSource="/Progetto senza titolo (6).png"/>
+    </Window.Background>
+
+    <Viewbox Stretch="Uniform">
+        <Grid Width="785" Height="671">
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill"/>
+            </Grid.Background>
+
+            <Image Margin="574,306,20,217" Source="/TV.png" Stretch="Fill"/>
+
+            <Image Margin="595,446,-1,77" Source="/TV.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.000"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Margin="595,167,-1,356" Source="/TV.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.000"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Margin="574,27,20,496" Source="/TV.png" Stretch="Fill"/>
+
+            <Image Margin="178,141,430,371" Source="/Tablet.png" Stretch="Fill" IsHitTestVisible="False"/>
+
+            <Image Margin="176,5,429,506" Source="/Tablet.png" Stretch="Fill" IsHitTestVisible="False"/>
+
+            <Image Margin="302,141,302,370" Source="/Tablet.png" Stretch="Fill" IsHitTestVisible="False"/>
+
+            <Image Margin="177,276,428,234" Source="/Tablet.png" Stretch="Fill" IsHitTestVisible="False"/>
+
+            <Image Margin="49,141,554,371" Source="/Tablet.png" Stretch="Fill" IsHitTestVisible="False"/>
+
+            <Button x:Name="btnMazzetto2" HorizontalAlignment="Left" Margin="91,163,0,0" VerticalAlignment="Top" Height="115" Width="98" Click="btnMazzetto_Click" >
+                <Image x:Name="Img_btnMazzetto2" Height="109" Width="90" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnMazzetto3" HorizontalAlignment="Left" Margin="219,164,0,0" VerticalAlignment="Top" Height="114" Width="95" Click="btnMazzetto_Click">
+                <Image x:Name="Img_btnMazzetto3" Height="109" Width="90" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnMazzetto4" HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" Height="114" Width="97" Click="btnMazzetto_Click">
+                <Image x:Name="Img_btnMazzetto4" Height="109" Width="90" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnMazzetto5" HorizontalAlignment="Left" Margin="219,299,0,0" VerticalAlignment="Top" Height="115" Width="96" Click="btnMazzetto_Click" >
+
+                <Image x:Name="Img_btnMazzetto5" Height="109" Width="90" Stretch="Fill"/>
+
+            </Button>
+            <Button x:Name="btnMazzetto1" HorizontalAlignment="Left" Margin="218,28,0,0" VerticalAlignment="Top" Height="114" Width="96" Click="btnMazzetto_Click" >
+                <Image x:Name="Img_btnMazzetto1" Height="109" Width="90" Stretch="Fill"/>
+            </Button>
+            <Rectangle HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97" Fill="#FFDDDDDD"/>
 
 
-        <Button x:Name="btnMazzetto2" HorizontalAlignment="Left" Margin="114,159,0,0" VerticalAlignment="Top" Height="114" Width="97" Click="btnMazzetto_Click" >
-            <Image x:Name="Img_btnMazzetto2" Height="109" Width="90" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnMazzetto3" HorizontalAlignment="Left" Margin="216,159,0,0" VerticalAlignment="Top" Height="114" Width="95" Click="btnMazzetto_Click">
-            <Image x:Name="Img_btnMazzetto3" Height="109" Width="90" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnMazzetto4" HorizontalAlignment="Left" Margin="316,159,0,0" VerticalAlignment="Top" Height="114" Width="97" Click="btnMazzetto_Click">
-            <Image x:Name="Img_btnMazzetto4" Height="109" Width="90" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnMazzetto5" HorizontalAlignment="Left" Margin="216,279,0,0" VerticalAlignment="Top" Height="115" Width="95" Click="btnMazzetto_Click">
-            <Image x:Name="Img_btnMazzetto5" Height="109" Width="90" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnMazzetto1" HorizontalAlignment="Left" Margin="216,40,0,0" VerticalAlignment="Top" Height="114" Width="95" Click="btnMazzetto_Click" >
-            <Image x:Name="Img_btnMazzetto1" Height="109" Width="90" Stretch="Fill"/>
-        </Button>
-        <Rectangle HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97" Fill="#FFDDDDDD"/>
 
+            <Button x:Name="btnBase1" HorizontalAlignment="Left" Margin="630,38,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click" >
+                <Image x:Name="Img_btnBase1" Height="121" Width="96" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnBase2" HorizontalAlignment="Left" Margin="630,178,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click">
+                <Image x:Name="Img_btnBase2" Height="121" Width="96" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnBase3" HorizontalAlignment="Left" Margin="630,317,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click">
+                <Image x:Name="Img_btnBase3" Height="121" Width="96" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnBase4" HorizontalAlignment="Left" Margin="630,456,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click">
+                <Image x:Name="Img_btnBase4" Height="121" Width="96" Stretch="Fill"/>
+            </Button>
 
+            <Rectangle x:Name="rettangoloMazzo" HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/RETRO.jpg"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button x:Name="btnMazzo" HorizontalAlignment="Left" Margin="114,462,0,0" VerticalAlignment="Top" Height="111" Width="95" Click="btnMazzo_Click">
+                <Image x:Name="Img_btnMazzo" Height="110" Width="90" Source="/RETRO.jpg" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnPozzo" HorizontalAlignment="Left" Margin="292,467,0,0" VerticalAlignment="Top" Height="115" Width="94" Click="btnPozzo_Click" RenderTransformOrigin="2,0">
+                <Image x:Name="Img_btnPozzo" Height="110" Width="90" Stretch="Fill"/>
+            </Button>
+            <Button x:Name="btnFinePartita" Content="ARRENDITI" HorizontalAlignment="Left" Margin="584,616,0,0" VerticalAlignment="Top" Height="39" Width="146" FontSize="22" Click="btnFinePartita_Click"/>
+            <Image x:Name="Img_DaMazzo_APozzo" HorizontalAlignment="Left" Height="107" Margin="116,464,0,0" VerticalAlignment="Top" Width="90"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Popup>
+                <Grid Background="#FFE5E5E5" Height="100" Width="100"/>
+            </Popup>
 
-        <Button x:Name="btnBase1" HorizontalAlignment="Left" Margin="630,47,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click" >
-            <Image x:Name="Img_btnBase1" Height="121" Width="96" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnBase2" HorizontalAlignment="Left" Margin="630,184,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click">
-            <Image x:Name="Img_btnBase2" Height="121" Width="96" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnBase3" HorizontalAlignment="Left" Margin="630,317,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click">
-            <Image x:Name="Img_btnBase3" Height="121" Width="96" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnBase4" HorizontalAlignment="Left" Margin="630,454,0,0" VerticalAlignment="Top" Height="126" Width="100" Click="btnMazzetto_Click">
-            <Image x:Name="Img_btnBase4" Height="121" Width="96" Stretch="Fill"/>
-        </Button>
+            <Image x:Name="Img_DAPozzo_AMazzetto1" HorizontalAlignment="Left" Height="109" Margin="295,470,0,0" VerticalAlignment="Top" Width="89"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
 
-        <Rectangle x:Name="rettangoloMazzo" HorizontalAlignment="Left" Height="113" Margin="119,467,0,0" Stroke="#FF2B2B2B" VerticalAlignment="Top" Width="97">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="/RETRO.jpg"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Button x:Name="btnMazzo" HorizontalAlignment="Left" Margin="114,462,0,0" VerticalAlignment="Top" Height="111" Width="95" Click="btnMazzo_Click">
-            <Image x:Name="Img_btnMazzo" Height="110" Width="90" Source="/RETRO.jpg" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnPozzo" HorizontalAlignment="Left" Margin="292,467,0,0" VerticalAlignment="Top" Height="115" Width="94" Click="btnPozzo_Click">
-            <Image x:Name="Img_btnPozzo" Height="110" Width="90" Stretch="Fill"/>
-        </Button>
-        <Button x:Name="btnFinePartita" Content="ARRENDITI" HorizontalAlignment="Left" Margin="584,616,0,0" VerticalAlignment="Top" Height="39" Width="146" FontSize="22" Click="btnFinePartita_Click"/>
-        <Image x:Name="Img_DaMazzo_APozzo" HorizontalAlignment="Left" Height="107" Margin="116,464,0,0" VerticalAlignment="Top" Width="90"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+            <Image x:Name="Img_DAPozzo_AMazzetto2" HorizontalAlignment="Left" Height="109" Margin="295,470,0,0" VerticalAlignment="Top" Width="89"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
 
-    </Grid>
+            <Image x:Name="Img_DAPozzo_AMazzetto3" HorizontalAlignment="Left" Height="109" Margin="295,470,0,0" VerticalAlignment="Top" Width="89"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="Img_DAPozzo_AMazzetto4" HorizontalAlignment="Left" Height="109" Margin="295,470,0,0" VerticalAlignment="Top" Width="89"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="Img_DAPozzo_AMazzetto5" HorizontalAlignment="Left" Height="109" Margin="295,470,0,0" VerticalAlignment="Top" Width="89"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label x:Name="lbl_DeselezioneCarta" Content="Hai selezionato la carta sbagliata? Premi il tasto destro per deselezionarla!" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="344,5,0,0"/>
+
+        </Grid>
+    </Viewbox>
 </Window>
