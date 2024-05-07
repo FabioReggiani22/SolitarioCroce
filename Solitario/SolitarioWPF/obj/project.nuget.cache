@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YTwuWj2mxrFakn7Eigw+oRtkBlhBowiIPLX+AtDTDPzlNBgB/X01E+KeEEO+quYxyKTZLE3Kr8bsrEhxqRFvLQ==",
+  "dgSpecHash": "qQ+xqtJ9oHXHU1sLIMI+gvB/loJNyF6VSm//AD1HS4mgPuibWocqrcb+kOK8wueHe6tP9axmaGTNnNIy3/Cc7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alans\\Desktop\\Solitario Croce Funzionate\\SolitarioCroce\\Solitario\\SolitarioWPF\\SolitarioWPF.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\alans\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\alans\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\alans\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\alans\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\gilberto.gradari\\Desktop\\solitario\\SolitarioCroce\\Solitario\\SolitarioWPF\\SolitarioWPF.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

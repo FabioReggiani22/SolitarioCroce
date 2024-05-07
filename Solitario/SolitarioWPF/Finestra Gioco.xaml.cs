@@ -32,6 +32,7 @@ namespace Solitario_A_Croce_WPF
         Carta _cartaSelezionata;
         private bool _primoBottoneSelezionato = false;
         private Button _primoBottone;
+        public bool vittoria;
         private Image _immagineAnimazione;
 
 
@@ -261,6 +262,11 @@ namespace Solitario_A_Croce_WPF
                 _primoBottone.Background = Brushes.Green;
                
             }
+            if(_giocoSolitario.StatoDellaPartita==StatoPartita.VITTORIA)
+            {
+                vittoria = true;
+                CambiaPaginaInEsitoPartita();
+            }
 
 
             
@@ -287,20 +293,16 @@ namespace Solitario_A_Croce_WPF
 
         private void btnFinePartita_Click(object sender, RoutedEventArgs e)
         {
-           
+            vittoria = false;
             _giocoSolitario.Resa();
-            btnBase1.IsEnabled=false;
-            btnBase2.IsEnabled = false;
-            btnBase3.IsEnabled = false;
-            btnBase4.IsEnabled = false;
-            btnMazzetto1.IsEnabled = false;
-            btnMazzetto2.IsEnabled = false;
-            btnMazzetto3.IsEnabled = false;
-            btnMazzetto4.IsEnabled = false;
-            btnMazzetto5.IsEnabled = false;
-            btnFinePartita.IsEnabled = false;
-            btnMazzo.IsEnabled = false;
-            btnPozzo.IsEnabled = false;
+            CambiaPaginaInEsitoPartita();
+        }
+        private void CambiaPaginaInEsitoPartita()
+        {
+            Thread.Sleep(869);
+            Esito_Partita esito_Partita = new Esito_Partita(vittoria);
+            esito_Partita.Show();
+            this.Close();
         }
 
         private void ScegliEAvviaAnimazioneMazzetto(string idMazzettoDaFareAnimazione, Carta cartaDaAnimare, string idMazzettoCliccatoPrima)

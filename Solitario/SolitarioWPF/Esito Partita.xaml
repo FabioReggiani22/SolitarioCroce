@@ -8,10 +8,9 @@
         Title="Esito Partita" Height="450" Width="600" ResizeMode="NoResize">
     <Grid>
         
-        <Button x:Name="btn_RicominciaPartita" Margin="10,267,324,59" FontSize="40" RenderTransformOrigin="0.5,0.5">Ricomincia</Button>
+        <Button x:Name="btn_RicominciaPartita" Margin="10,267,324,59" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="btn_RicominciaPartita_Click">Ricomincia</Button>
         <Button x:Name="btn_TerminaProgramma" Margin="324,265,10,61" FontSize="40" Click="btn_TerminaProgramma_Click" >Fine</Button>
-        <TextBox x:Name="txtBox_EsitoPartita" HorizontalAlignment="Left" Margin="86,47,0,0" TextWrapping="Wrap" Text="ESITO PARTITA" VerticalAlignment="Top" Width="406" Height="102" FontSize="48" TextAlignment="Center"/>
-        
+        <TextBox x:Name="txtBox_EsitoPartita" HorizontalAlignment="Left" Margin="86,47,0,0" TextWrapping="Wrap" Text="ESITO PARTITA" VerticalAlignment="Top" Width="406" Height="102" FontSize="60" TextAlignment="Center"/>
     </Grid>
     
     

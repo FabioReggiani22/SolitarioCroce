@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Solitario_A_Croce_WPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,15 +20,29 @@ namespace SolitarioWPF
     /// </summary>
     public partial class Esito_Partita : Window
     {
-        public Esito_Partita()
+        public Esito_Partita(bool vittoria)
         {
             InitializeComponent();
-            
-           
+            if (vittoria)
+            {
+                txtBox_EsitoPartita.Text = "HAI VINTO!";
+            }
+            else
+            {
+                txtBox_EsitoPartita.Text = "HAI PERSO!";
+            }
+
         }
 
         private void btn_TerminaProgramma_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void btn_RicominciaPartita_Click(object sender, RoutedEventArgs e)
+        {
+            Finestra_Gioco fg = new Finestra_Gioco();
+            fg.Show();
             this.Close();
         }
     }
