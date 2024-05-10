@@ -73,11 +73,10 @@ namespace SolitarioCroce
                 {
                     TrovaMazzetto(idMazzetto, out mazzetto);
                     if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
-                    //servirebbe un "controlla se carta aggiungibile"
+
+                    CercaERimuoviCarta(carta); 
                     mazzetto.AggiungiCarta(carta);
-                    CercaERimuoviCarta(carta);
-                    CercaERimuoviCarta(carta);
-                    mazzetto.AggiungiCarta(carta);         
+                    ControlloVincita();
                 }
                 catch (Exception ex) { throw ex; }
             }
@@ -99,10 +98,7 @@ namespace SolitarioCroce
                 }
                 if(!trovato)
                 {
-                    for(int i=0; i< _pozzo.Count; i++)
-                    {
-                        if (_pozzo[i] == carta) { _pozzo.Remove(carta);trovato = true; break; }
-                    }
+                        if (_pozzo[_pozzo.Count-1] == carta) { _pozzo.Remove(carta);trovato = true; }
                 }
             }
         }
@@ -135,7 +131,7 @@ namespace SolitarioCroce
             bool vittoria=true;
             foreach(Mazzetto mazzetto in _basi)
             {
-                if (mazzetto.Carte[10] !=new Carta(10,Seme.Denara) || mazzetto.Carte[10] != new Carta(10, Seme.Bastoni) || mazzetto.Carte[10] != new Carta(10, Seme.Coppe) || mazzetto.Carte[10] != new Carta(10, Seme.Spade))
+                if (mazzetto.Carte[9] !=new Carta(10,Seme.Denara) || mazzetto.Carte[9] != new Carta(10, Seme.Bastoni) || mazzetto.Carte[9] != new Carta(10, Seme.Coppe) || mazzetto.Carte[9] != new Carta(10, Seme.Spade))
                 {
                     vittoria=false; break;
                 }
