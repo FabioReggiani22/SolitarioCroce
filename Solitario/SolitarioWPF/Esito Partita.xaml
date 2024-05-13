@@ -5,13 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolitarioWPF"
         mc:Ignorable="d"
-        Title="Esito Partita" Height="450" Width="600" ResizeMode="NoResize">
+        Title="Esito Partita" Height="450" Width="600" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
     <Grid>
-        
-        <Button x:Name="btn_RicominciaPartita" Margin="10,267,324,59" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="btn_RicominciaPartita_Click">Ricomincia</Button>
-        <Button x:Name="btn_TerminaProgramma" Margin="324,265,10,61" FontSize="40" Click="btn_TerminaProgramma_Click" >Fine</Button>
-        <TextBox x:Name="txtBox_EsitoPartita" HorizontalAlignment="Left" Margin="86,47,0,0" TextWrapping="Wrap" Text="ESITO PARTITA" VerticalAlignment="Top" Width="406" Height="102" FontSize="60" TextAlignment="Center"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sfondo Verde.png"/>
+        </Grid.Background>
+
+        <Button x:Name="btn_RicominciaPartita" Margin="50,265,342,61" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="btn_RicominciaPartita_Click" Background="#FFC5FFA5">Ricomincia
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+                <Button x:Name="btn_TerminaProgramma" Margin="332,265,60,63" FontSize="40" Click="btn_TerminaProgramma_Click" Background="#FFFFAFAF" >Fine
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock x:Name="txtBox_EsitoPartita" HorizontalAlignment="Left" Margin="86,47,0,0" TextWrapping="Wrap" Text="ESITO PARTITA" VerticalAlignment="Top" Width="406" Height="102" FontSize="60" TextAlignment="Center"  Background="{x:Null}"/>
     </Grid>
-    
-    
+
+
 </Window>

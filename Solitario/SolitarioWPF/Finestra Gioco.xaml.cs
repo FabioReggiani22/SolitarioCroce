@@ -28,7 +28,7 @@ namespace Solitario_A_Croce_WPF
     public partial class Finestra_Gioco : Window
     {
         Gioco _giocoSolitario;
-     
+
         Carta _cartaSelezionata;
         private bool _primoBottoneSelezionato = false;
         private Button _primoBottone;
@@ -39,7 +39,7 @@ namespace Solitario_A_Croce_WPF
         public Finestra_Gioco()
         {
             InitializeComponent();
-            
+
             //mescolo il mazzo e inizializzo il gioco.
             Mazzo mazzo = new Mazzo();
             mazzo.MescolaMazzo();
@@ -54,7 +54,7 @@ namespace Solitario_A_Croce_WPF
                 if (_giocoSolitario.Mazzo.Lunghezza == 1) btnMazzo.Visibility = Visibility.Collapsed;
                 if (_giocoSolitario.Mazzo.Lunghezza == 2) rettangoloMazzo.Visibility = Visibility.Collapsed;
                 _giocoSolitario.PescaCarta();
-               
+
                 Carta carta;
                 carta = _giocoSolitario.Pozzo.Last();
 
@@ -80,7 +80,7 @@ namespace Solitario_A_Croce_WPF
         }
 
         private void AggiornaImmagini()
-        {    
+        {
             if (_giocoSolitario.Basi[0].VisualizzaPrimaCarta != null)
             {
                 Img_btnBase1.Visibility = Visibility.Visible;
@@ -173,23 +173,23 @@ namespace Solitario_A_Croce_WPF
             {
                 Img_btnPozzo.Visibility = Visibility.Collapsed;
             }
-            
+
         }
-        
+
         private void btnPozzo_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 _cartaSelezionata = _giocoSolitario.Pozzo.Last();
 
-                btnMazzetto_Click(sender,e);
+                btnMazzetto_Click(sender, e);
             }
             catch
             {
                 MessageBox.Show("Non ci sono carte nel pozzo!", "Pozzo Vuoto", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
-       
+
         private void btnMazzetto_Click(object sender, RoutedEventArgs e)
         {
             Button bottoneCliccato = (Button)sender;
@@ -219,9 +219,9 @@ namespace Solitario_A_Croce_WPF
                     MessageBox.Show($"Errore durante lo scambio della carta: {ex.Message}", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 // Resetta lo stato della selezione
-                _primoBottoneSelezionato = false;               
+                _primoBottoneSelezionato = false;
                 _primoBottone.Background = Brushes.Silver; // Torna al colore silver
-                bottoneCliccato.Background = Brushes.Silver;              
+                bottoneCliccato.Background = Brushes.Silver;
             }
             else  // Se è il primo bottone selezionato, memorizza il bottone e imposta il flag a true
             {
@@ -231,7 +231,7 @@ namespace Solitario_A_Croce_WPF
                 List<Carta> pozzo = _giocoSolitario.Pozzo;
                 string nome = _primoBottone.Name;
                 string id = TrovaIdMazzettoDaNomeBottone(nome);
-                Mazzetto[] croci = _giocoSolitario.Croci;             
+                Mazzetto[] croci = _giocoSolitario.Croci;
                 bool trovato = false;
                 foreach (Mazzetto mazzetto in croci)
                 {
@@ -258,18 +258,18 @@ namespace Solitario_A_Croce_WPF
                     {
                         _cartaSelezionata = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
                     }
-                }     
+                }
                 _primoBottone.Background = Brushes.Green;
-               
+
             }
-            if(_giocoSolitario.StatoDellaPartita==StatoPartita.VITTORIA)
+            if (_giocoSolitario.StatoDellaPartita == StatoPartita.VITTORIA)
             {
                 vittoria = true;
                 CambiaPaginaInEsitoPartita();
             }
 
 
-            
+
         }
 
         private string TrovaIdMazzettoDaNomeBottone(string nomeBottone)
@@ -311,90 +311,152 @@ namespace Solitario_A_Croce_WPF
             {
                 if (idMazzettoDaFareAnimazione == "C1")
                 {
-
-                    Img_DAPozzo_AMazzetto1.Visibility = Visibility.Visible;
-                    Img_DAPozzo_AMazzetto1.Source = new BitmapImage(new Uri(cartaDaAnimare.NomeFile, UriKind.Relative));
-
-                    Storyboard animazione = (Storyboard)FindResource("Storyboard_DAPozzo_AMazzetto1");
-                    _immagineAnimazione = Img_DAPozzo_AMazzetto1;
-                    animazione.Completed += Animazione_Completata;
-
-                    animazione.Begin();
+                    EseguiAnimazione("Storyboard_DAPozzo_AMazzetto1", cartaDaAnimare);
                 }
                 else if (idMazzettoDaFareAnimazione == "C2")
                 {
-                    Img_DAPozzo_AMazzetto2.Visibility = Visibility.Visible;
-                    Img_DAPozzo_AMazzetto2.Source = new BitmapImage(new Uri(cartaDaAnimare.NomeFile, UriKind.Relative));
-
-                    Storyboard animazione = (Storyboard)FindResource("Storyboard_DAPozzo_AMazzetto2");
-                    _immagineAnimazione = Img_DAPozzo_AMazzetto2;
-                    animazione.Completed += Animazione_Completata;
-
-                    animazione.Begin();
+                    EseguiAnimazione("Storyboard_DAPozzo_AMazzetto2", cartaDaAnimare);
                 }
                 else if (idMazzettoDaFareAnimazione == "C3")
                 {
-                    Img_DAPozzo_AMazzetto3.Visibility = Visibility.Visible;
-                    Img_DAPozzo_AMazzetto3.Source = new BitmapImage(new Uri(cartaDaAnimare.NomeFile, UriKind.Relative));
-
-                    Storyboard animazione = (Storyboard)FindResource("Storyboard_DAPozzo_AMazzetto3");
-                    _immagineAnimazione = Img_DAPozzo_AMazzetto3;
-                    animazione.Completed += Animazione_Completata;
-
-                    animazione.Begin();
+                    EseguiAnimazione("Storyboard_DAPozzo_AMazzetto3", cartaDaAnimare);
                 }
                 else if (idMazzettoDaFareAnimazione == "C4")
                 {
-                    Img_DAPozzo_AMazzetto4.Visibility = Visibility.Visible;
-                    Img_DAPozzo_AMazzetto4.Source = new BitmapImage(new Uri(cartaDaAnimare.NomeFile, UriKind.Relative));
-
-                    Storyboard animazione = (Storyboard)FindResource("Storyboard_DAPozzo_AMazzetto4");
-                    _immagineAnimazione = Img_DAPozzo_AMazzetto4;
-                    animazione.Completed += Animazione_Completata;
-
-                    animazione.Begin();
+                    EseguiAnimazione("Storyboard_DAPozzo_AMazzetto4", cartaDaAnimare);
                 }
                 else if (idMazzettoDaFareAnimazione == "C5")
                 {
-
-                   
-                    Img_DAPozzo_AMazzetto5.Visibility = Visibility.Visible;
-                    Img_DAPozzo_AMazzetto5.Source = new BitmapImage(new Uri(cartaDaAnimare.NomeFile, UriKind.Relative));
-
-                    Storyboard animazione = (Storyboard)FindResource("Storyboard_DAPozzo_AMazzetto5");
-                    _immagineAnimazione = Img_DAPozzo_AMazzetto5;
-                    animazione.Completed += Animazione_Completata;
-
-                    animazione.Begin();
-
+                    EseguiAnimazione("Storyboard_DAPozzo_AMazzetto5", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B1")
+                {
+                    EseguiAnimazione("Storyboard_DAPozzo_ABase1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B2")
+                {
+                    EseguiAnimazione("Storyboard_DAPozzo_ABase2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B3")
+                {
+                    EseguiAnimazione("Storyboard_DAPozzo_ABase3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B4")
+                {
+                    EseguiAnimazione("Storyboard_DAPozzo_ABase4", cartaDaAnimare);
+                }
+            }
+            else if (idMazzettoCliccatoPrima == "C1")
+            {
+                if (idMazzettoDaFareAnimazione == "B1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_ABase1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_ABase2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_ABase3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_ABase4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_AMazzetto3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto1_AMazzetto5", cartaDaAnimare);
                 }
 
-               
+
             }
-            
+            else if (idMazzettoCliccatoPrima == "C2")
+            {
+                if (idMazzettoDaFareAnimazione == "B1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_ABase1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_ABase2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_ABase3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_ABase4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_AMazzetto3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto2_AMazzetto5", cartaDaAnimare);
+                }
+
+
+            }
+
+
+        }
+
+        private void EseguiAnimazione(string nomeStoryboard, Carta cartaDaAnimare)
+        {
+            Img_Animazione.Visibility = Visibility.Visible;
+            Img_Animazione.Source = new BitmapImage(new Uri(cartaDaAnimare.NomeFile, UriKind.Relative));
+
+            Storyboard animazione = (Storyboard)FindResource(nomeStoryboard);
+            _immagineAnimazione = Img_Animazione;
+            animazione.Completed += Animazione_Completata;
+
+            animazione.Begin();
         }
 
         private void Animazione_Completata(object sender, EventArgs e)
         {
-          
+
             _immagineAnimazione.Visibility = Visibility.Collapsed;
             AggiornaImmagini();
         }
 
-      
+
 
         private void AnnullaSelezione_ConClick_TastoDestro(object sender, MouseButtonEventArgs e)
         {
-           
+
             if (e.RightButton == MouseButtonState.Pressed)
             {
-                if(_primoBottone!=null)
+                if (_primoBottone != null)
                 {
                     _primoBottone.Background = Brushes.Silver;
                     _primoBottone = null;
                     _primoBottoneSelezionato = false;
                 }
-                
+
             }
         }
 

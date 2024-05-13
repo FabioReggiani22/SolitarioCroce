@@ -26,6 +26,7 @@ namespace SolitarioWPF
             if (vittoria)
             {
                 txtBox_EsitoPartita.Text = "HAI VINTO!";
+                
             }
             else
             {

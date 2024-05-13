@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gilberto.gradari\\.nuget\\packages\\": {},
+    "C:\\Users\\alan.soldati\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gilberto.gradari\\Desktop\\solitario\\SolitarioCroce\\Solitario\\SolitarioWPF\\SolitarioWPF.csproj",
+      "projectUniqueName": "C:\\Users\\alan.soldati\\Desktop\\Solitario Croce fabio\\SolitarioCroce\\Solitario\\SolitarioWPF\\SolitarioWPF.csproj",
       "projectName": "SolitarioWPF",
-      "projectPath": "C:\\Users\\gilberto.gradari\\Desktop\\solitario\\SolitarioCroce\\Solitario\\SolitarioWPF\\SolitarioWPF.csproj",
-      "packagesPath": "C:\\Users\\gilberto.gradari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gilberto.gradari\\Desktop\\solitario\\SolitarioCroce\\Solitario\\SolitarioWPF\\obj\\",
+      "projectPath": "C:\\Users\\alan.soldati\\Desktop\\Solitario Croce fabio\\SolitarioCroce\\Solitario\\SolitarioWPF\\SolitarioWPF.csproj",
+      "packagesPath": "C:\\Users\\alan.soldati\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alan.soldati\\Desktop\\Solitario Croce fabio\\SolitarioCroce\\Solitario\\SolitarioWPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gilberto.gradari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alan.soldati\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,8 +59,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\gilberto.gradari\\Desktop\\solitario\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj": {
-              "projectPath": "C:\\Users\\gilberto.gradari\\Desktop\\solitario\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj"
+            "C:\\Users\\alan.soldati\\Desktop\\Solitario Croce fabio\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj": {
+              "projectPath": "C:\\Users\\alan.soldati\\Desktop\\Solitario Croce fabio\\SolitarioCroce\\Solitario\\Solitario\\Solitario.csproj"
             }
           }
         }

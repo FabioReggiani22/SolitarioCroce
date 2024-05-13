@@ -90,10 +90,11 @@
     <None Remove="carte\Tre_Coppe.jpg" />
     <None Remove="carte\Tre_Denara.jpg" />
     <None Remove="carte\Tre_Spade.jpg" />
+    <None Remove="IconaWelcome.png" />
+    <None Remove="ImmagineInfo.png" />
     <None Remove="Progetto senza titolo %286%29.png" />
     <None Remove="RETRO.jpg" />
     <None Remove="Sfondo Verde.png" />
-    <None Remove="sfondo.jpg" />
     <None Remove="Tablet.png" />
     <None Remove="TV.png" />
   </ItemGroup>
@@ -232,9 +233,10 @@
     <Content Include="TV.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="IconaWelcome.png" />
+    <Resource Include="ImmagineInfo.png" />
     <Resource Include="Progetto senza titolo (6).png" />
     <Resource Include="Sfondo Verde.png" />
-    <Resource Include="sfondo.jpg" />
     <Resource Include="Tablet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

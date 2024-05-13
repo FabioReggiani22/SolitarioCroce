@@ -34,3 +34,15 @@ C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solit
 C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\refint\Solitario.dll
 C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.pdb
 C:\Users\alans\Desktop\Solitario Croce Funzionate\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\ref\Solitario.dll
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.deps.json
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.dll
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\bin\Debug\net7.0\Solitario.pdb
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.csproj.AssemblyReference.cache
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfoInputs.cache
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.AssemblyInfo.cs
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.csproj.CoreCompileInputs.cache
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.dll
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\refint\Solitario.dll
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\Solitario.pdb
+C:\Users\alan.soldati\Desktop\Solitario Croce fabio\SolitarioCroce\Solitario\Solitario\obj\Debug\net7.0\ref\Solitario.dll

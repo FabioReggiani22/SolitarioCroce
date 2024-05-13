@@ -26,8 +26,6 @@ namespace Solitario_A_Croce_WPF
         public MainWindow()
         {
             InitializeComponent();
-           
-
         }
 
         private void ButtonIniziaPartita_Click(object sender, RoutedEventArgs e)
