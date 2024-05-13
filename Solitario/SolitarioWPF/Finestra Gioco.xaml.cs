@@ -213,6 +213,7 @@ namespace Solitario_A_Croce_WPF
                     {
                         MessageBox.Show("Seleziona un mazzetto diverso per lo spostamento della carta.", "Avviso", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
+
                 }
                 catch (Exception ex)
                 {
@@ -417,11 +418,204 @@ namespace Solitario_A_Croce_WPF
                 {
                     EseguiAnimazione("Storyboard_DAMazzetto2_AMazzetto5", cartaDaAnimare);
                 }
-
-
             }
-
-
+            else if (idMazzettoCliccatoPrima == "C3")
+            {
+                if (idMazzettoDaFareAnimazione == "B1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_ABase1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_ABase2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_ABase3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_ABase4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto3_AMazzetto5", cartaDaAnimare);
+                }
+            }
+            else if (idMazzettoCliccatoPrima == "C4")
+            {
+                if (idMazzettoDaFareAnimazione == "B1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_ABase1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_ABase2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_ABase3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_ABase4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_AMazzetto3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto4_AMazzetto5", cartaDaAnimare);
+                }
+            }
+            else if (idMazzettoCliccatoPrima == "C5")
+            {
+                if (idMazzettoDaFareAnimazione == "B1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_ABase1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_ABase2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_ABase3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "B4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_ABase4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DAMazzetto5_AMazzetto3", cartaDaAnimare);
+                }
+            }
+            else if (idMazzettoCliccatoPrima == "B1")
+            {
+                if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DABase1_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DABase1_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DABase1_AMazzetto3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DABase1_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DABase1_AMazzetto5", cartaDaAnimare);
+                }
+            }
+            else if (idMazzettoCliccatoPrima == "B2")
+            {
+                if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DABase2_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DABase2_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DABase2_AMazzetto3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DABase2_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DABase2_AMazzetto5", cartaDaAnimare);
+                }
+            }
+            else if (idMazzettoCliccatoPrima == "B3")
+            {
+                if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DABase3_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DABase3_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DABase3_AMazzetto3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DABase3_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DABase3_AMazzetto5", cartaDaAnimare);
+                }
+            }
+            else if (idMazzettoCliccatoPrima == "B4")
+            {
+                if (idMazzettoDaFareAnimazione == "C1")
+                {
+                    EseguiAnimazione("Storyboard_DABase4_AMazzetto1", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C2")
+                {
+                    EseguiAnimazione("Storyboard_DABase4_AMazzetto2", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C3")
+                {
+                    EseguiAnimazione("Storyboard_DABase4_AMazzetto3", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C4")
+                {
+                    EseguiAnimazione("Storyboard_DABase4_AMazzetto4", cartaDaAnimare);
+                }
+                else if (idMazzettoDaFareAnimazione == "C5")
+                {
+                    EseguiAnimazione("Storyboard_DABase4_AMazzetto5", cartaDaAnimare);
+                }
+            }
         }
 
         private void EseguiAnimazione(string nomeStoryboard, Carta cartaDaAnimare)
@@ -438,7 +632,6 @@ namespace Solitario_A_Croce_WPF
 
         private void Animazione_Completata(object sender, EventArgs e)
         {
-
             _immagineAnimazione.Visibility = Visibility.Collapsed;
             AggiornaImmagini();
         }
