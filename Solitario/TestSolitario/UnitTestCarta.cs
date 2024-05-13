@@ -34,7 +34,7 @@ namespace TestSolitario
         public void Carta_WithValidUri()
         {
             Carta carta = new Carta(1, Seme.Denara);
-            string nomeFile = "1A.jpg";
+            string nomeFile = "carte/1A.jpg";
             Assert.AreEqual(nomeFile, carta.NomeFile);
         }
     }
