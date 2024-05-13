@@ -74,7 +74,7 @@ namespace SolitarioCroce
                     TrovaMazzetto(idMazzetto, out mazzetto);
                     if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
 
-                    CercaERimuoviCarta(carta); 
+                    CercaERimuoviCarta(carta,mazzetto); 
                     mazzetto.AggiungiCarta(carta);
                     ControlloVincita();
                 }
@@ -83,22 +83,35 @@ namespace SolitarioCroce
             else throw new ArgumentException("La partita si è già conclusa, non puoi più continuare a giocare");
 
         }
-        private void CercaERimuoviCarta(Carta carta)
+        private void CercaERimuoviCarta(Carta carta, Mazzetto mazzetto)
         {
             bool trovato = false;
             for (int i = 0; i < _basi.Length; i++)
             {
-                if (_basi[i].VisualizzaPrimaCarta == carta) { _basi[i].TogliPrimaCarta();trovato = true;  break; }
+                if (_basi[i].VisualizzaPrimaCarta == carta) 
+                {
+                    if ((mazzetto.Tipo == TipoMazzetto.CROCE && !mazzetto.VerificaOrdineCroci(carta)) || (mazzetto.Tipo == TipoMazzetto.BASE && !mazzetto.VerificaOrdineBasi(carta))) throw new ArgumentException("La carta non può essere inserita");
+                    _basi[i].TogliPrimaCarta();trovato = true;  break; 
+                }
             }
             if (!trovato)
             {
                 for (int i = 0; i < _croci.Length; i++)
                 {
-                    if (_croci[i].VisualizzaPrimaCarta == carta) { _croci[i].TogliPrimaCarta();trovato = true; break; }
+                   
+                    if (_croci[i].VisualizzaPrimaCarta == carta) 
+                    {
+                        if ((mazzetto.Tipo == TipoMazzetto.CROCE && !mazzetto.VerificaOrdineCroci(carta)) || (mazzetto.Tipo == TipoMazzetto.BASE && !mazzetto.VerificaOrdineBasi(carta))) throw new ArgumentException("La carta non può essere inserita");
+                        _croci[i].TogliPrimaCarta();trovato = true; break;
+                    }
                 }
                 if(!trovato)
                 {
-                        if (_pozzo[_pozzo.Count-1] == carta) { _pozzo.Remove(carta);trovato = true; }
+                    if (_pozzo[_pozzo.Count-1] == carta) 
+                    {
+                        if ((mazzetto.Tipo == TipoMazzetto.CROCE && !mazzetto.VerificaOrdineCroci(carta)) || (mazzetto.Tipo == TipoMazzetto.BASE && !mazzetto.VerificaOrdineBasi(carta))) throw new ArgumentException("La carta non può essere inserita");
+                        _pozzo.Remove(carta);trovato = true;
+                    }
                 }
             }
         }

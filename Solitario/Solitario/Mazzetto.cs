@@ -62,10 +62,19 @@ namespace SolitarioCroce
             if (_indice == 10) throw new ArgumentException("Il mazzetto è pieno");
             try
             {
-                if (Tipo == TipoMazzetto.BASE) VerificaOrdineBasi(carta);
-                else VerificaOrdineCroci(carta);
-                _carte[_indice] = carta;
-                _indice++;
+                bool verifica;
+                if (Tipo == TipoMazzetto.BASE) verifica=VerificaOrdineBasi(carta);
+                else verifica=VerificaOrdineCroci(carta);
+                if(verifica) 
+                {
+                    _carte[_indice] = carta;
+                    _indice++;
+                }
+                else
+                {
+                    throw new ArgumentException("La carta non può essere inserita");
+                }
+
             }
             catch(Exception ex) { throw ex; }
 
@@ -78,21 +87,23 @@ namespace SolitarioCroce
             _indice--;
         }
 
-        private void VerificaOrdineBasi(Carta carta)
+        public bool VerificaOrdineBasi(Carta carta)
         {
-            if (carta == null) throw new ArgumentNullException("carta null");
+            if (carta == null) return false;
             bool errore = false;
             if (_indice == 0 && carta.ValoreCarta != Valore.Asso) errore = true;
             else
             {
                 if (_indice != 0 && ((int)carta.ValoreCarta - 1 != (int)_carte[_indice-1].ValoreCarta || carta.SemeCarta != _carte[_indice-1].SemeCarta)) errore = true;
             }
-            if (errore) { throw new ArgumentException("La carta non può essere messa nelle basi" + carta.ValoreCarta.ToString()+carta.SemeCarta.ToString()); }
+            if (errore) { return false; }
+            else return true;
         }
 
-        private void VerificaOrdineCroci(Carta carta)
+        public bool VerificaOrdineCroci(Carta carta)
         {
-            if(_indice!=0 && ((int)carta.ValoreCarta + 1 != (int)_carte[_indice-1].ValoreCarta || carta.SemeCarta == _carte[_indice-1].SemeCarta)) throw new ArgumentException("La carta inserita non è valida");
+            if(_indice!=0 && ((int)carta.ValoreCarta + 1 != (int)_carte[_indice-1].ValoreCarta || carta.SemeCarta == _carte[_indice-1].SemeCarta))return false;
+            return true;
         }
         public override bool Equals(object? obj)
         {
