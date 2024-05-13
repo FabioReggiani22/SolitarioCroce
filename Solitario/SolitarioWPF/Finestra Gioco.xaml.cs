@@ -72,10 +72,7 @@ namespace Solitario_A_Croce_WPF
                 };
                 animazione.Begin();
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            catch (Exception ex) {}
 
         }
 
@@ -184,10 +181,7 @@ namespace Solitario_A_Croce_WPF
 
                 btnMazzetto_Click(sender, e);
             }
-            catch
-            {
-                MessageBox.Show("Non ci sono carte nel pozzo!", "Pozzo Vuoto", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
+            catch { }
         }
 
         private void btnMazzetto_Click(object sender, RoutedEventArgs e)
@@ -209,16 +203,9 @@ namespace Solitario_A_Croce_WPF
 
                         AggiornaImmagini();
                     }
-                    else
-                    {
-                        MessageBox.Show("Seleziona un mazzetto diverso per lo spostamento della carta.", "Avviso", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    }
 
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Errore durante lo scambio della carta: {ex.Message}", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
+                catch (Exception ex){}
                 // Resetta lo stato della selezione
                 _primoBottoneSelezionato = false;
                 _primoBottone.Background = Brushes.Silver; // Torna al colore silver
