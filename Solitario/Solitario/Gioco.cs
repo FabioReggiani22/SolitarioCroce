@@ -71,6 +71,7 @@ namespace SolitarioCroce
                 Mazzetto? mazzetto = null;
                 try
                 {
+                    if (carta == null) throw new ArgumentException("La carta non è valida");
                     TrovaMazzetto(idMazzetto, out mazzetto);
                     if (mazzetto == null) throw new ArgumentException("L'id non corrisponde a nessun mazzetto");
 
