@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="/Sfondo Verde.png"/>
         </Grid.Background>
 
-        <Button x:Name="btn_RicominciaPartita" Margin="50,265,342,61" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="btn_RicominciaPartita_Click" Background="#FFC5FFA5">Ricomincia
+        <Button x:Name="btn_RicominciaPartita" Margin="27,265,311,61" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="btn_RicominciaPartita_Click" Background="#FFC5FFA5">Ricomincia
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -19,7 +19,7 @@
             </Button.Resources>
         </Button>
 
-                <Button x:Name="btn_TerminaProgramma" Margin="332,265,60,63" FontSize="40" Click="btn_TerminaProgramma_Click" Background="#FFFFAFAF" >Fine
+                <Button x:Name="btn_TerminaProgramma" Margin="311,265,27,63" FontSize="40" Click="btn_TerminaProgramma_Click" Background="#FFFFAFAF" >Fine
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
