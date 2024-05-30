@@ -159,6 +159,7 @@ namespace SolitarioCroce
 
         public void PescaCarta()
         {
+            if (_mazzo.Lunghezza == 0) throw new ArgumentOutOfRangeException("Il mazzo è vuoto");
             _pozzo.Add(_mazzo.EstraiPrimaCarta);
         }
     }
