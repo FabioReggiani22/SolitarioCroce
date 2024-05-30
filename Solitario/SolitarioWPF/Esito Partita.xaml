@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolitarioWPF"
         mc:Ignorable="d"
-        Title="Esito Partita" Height="450" Width="600" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+        Title="Esito Partita" Height="450" Width="600" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" Icon="/Logo Solitario A Croce.png">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Sfondo Verde.png"/>

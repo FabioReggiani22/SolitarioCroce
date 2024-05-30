@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         
         PreviewMouseRightButtonDown="AnnullaSelezione_ConClick_TastoDestro"
-        Title="Finestra_Gioco" Height="700" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Finestra_Gioco" Height="700" Width="800" WindowStartupLocation="CenterScreen" Icon="/Logo Solitario A Croce.png">
 
     <Window.Resources>
         <Storyboard x:Key="Storyboard_DAMazzo_APozzo">
@@ -919,7 +919,13 @@
             <Button x:Name="btnPozzo" HorizontalAlignment="Left" Margin="292,467,0,0" VerticalAlignment="Top" Height="115" Width="94" Click="btnPozzo_Click" RenderTransformOrigin="2,0">
                 <Image x:Name="Img_btnPozzo" Height="110" Width="90" Stretch="Fill"/>
             </Button>
-            <Button x:Name="btnFinePartita" Content="ARRENDITI" HorizontalAlignment="Left" Margin="584,616,0,0" VerticalAlignment="Top" Height="39" Width="146" FontSize="22" Click="btnFinePartita_Click"/>
+            <Button Margin="491,596,55,10" FontSize="40" Click="btnFinePartita_Click" Background="#FFFFAFAF">ARRENDITI
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
             <Image x:Name="Img_DaMazzo_APozzo" HorizontalAlignment="Left" Height="107" Margin="116,464,0,0" VerticalAlignment="Top" Width="90"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
@@ -947,7 +953,7 @@
 
         </Grid>
     </Viewbox>
-    
+
 
 </Window>
 

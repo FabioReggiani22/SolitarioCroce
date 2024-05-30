@@ -188,7 +188,7 @@ namespace Solitario_A_Croce_WPF
         {
             Button bottoneCliccato = (Button)sender;
             string nomeBottone = bottoneCliccato.Name;
-            bottoneCliccato.Background = Brushes.Green;
+            bottoneCliccato.Background = Brushes.Orange;
             // Se è stato già selezionato un  bottone
             if (_primoBottoneSelezionato)
             {
@@ -202,6 +202,7 @@ namespace Solitario_A_Croce_WPF
                         ScegliEAvviaAnimazioneMazzetto(idMazzettoDestinazione, _cartaSelezionata, TrovaIdMazzettoDaNomeBottone(_primoBottone.Name)); ///test animazione
 
                         AggiornaImmagini();
+
                     }
 
                 }
@@ -247,7 +248,7 @@ namespace Solitario_A_Croce_WPF
                         _cartaSelezionata = _giocoSolitario.Pozzo[_giocoSolitario.Pozzo.Count - 1];
                     }
                 }
-                _primoBottone.Background = Brushes.Green;
+                _primoBottone.Background = Brushes.SandyBrown;
 
             }
             if (_giocoSolitario.StatoDellaPartita == StatoPartita.VITTORIA)
@@ -255,9 +256,6 @@ namespace Solitario_A_Croce_WPF
                 vittoria = true;
                 CambiaPaginaInEsitoPartita();
             }
-
-
-
         }
 
         private string TrovaIdMazzettoDaNomeBottone(string nomeBottone)
