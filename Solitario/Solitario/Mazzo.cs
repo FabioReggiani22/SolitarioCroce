@@ -45,13 +45,6 @@ namespace SolitarioCroce
                 _carte[i] = cartaDaScambiare;
             }
         }
-
-        public Carta VisualizzaPrimaCarta()
-        {
-            if (_indexExtraction == _carte.Length) throw new ArgumentOutOfRangeException("Non puoi estrarre altre carte");
-
-            return _carte[_indexExtraction];
-        }
         public Carta EstraiPrimaCarta
         {
             get
@@ -63,36 +56,6 @@ namespace SolitarioCroce
 
                 return carta;
             }
-        }
-
-        public Carta EstraiCarta
-        {
-            get
-            {
-                Random random = new Random();
-                Carta carta = _carte[random.Next(0, 40)];
-                return carta;
-            }
-        }
-        public void Shift()
-        {
-            Carta carta = _carte[_indexExtraction];
-            for (int i = _indexExtraction; i <= _carte.Length - 2; i++)
-            {
-                _carte[i] = _carte[i + 1];
-            }
-            _carte[_carte.Length - 1] = carta;
-        }
-
-        public override string ToString()
-        {
-            string res = "";
-            for (int i = _indexExtraction; i < _carte.Length; i++)
-            {
-                res += _carte[i].ToString();
-                res += "\n";
-            }
-            return res;
         }
         public int Lunghezza
         {
