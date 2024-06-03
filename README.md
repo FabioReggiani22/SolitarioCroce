@@ -25,6 +25,9 @@ https://docs.google.com/document/d/1QcCqljWaj1_OJeTMCJd6ZT2AEmJBYhfx2dd0lCFIo0g/
 -Mockup-
 https://www.figma.com/design/BjI9BLptfTTg2Lse1csudb/Solitario-a-croce?node-id=0-1&t=oaio7aoeD2ZhinaQ-1
 
+-Presentazione-
+https://www.canva.com/design/DAGFMo9262o/bUVMDCMaruD8xtqx1EN9DA/view?utm_content=DAGFMo9262o&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
 
 Project Work, gruppo 7 Reggiani-Righi-Gradari-Soldati.
  Progetto di solitario a croce
